@@ -1,0 +1,13 @@
+version: '3'
+
+services:
+  database:
+    image: 'mongo'
+    container_name: 'HMB-mongo-container'
+    ports:
+      - 27017:27017
+    environment:
+      MONGO_INITDB_DATABASE: "HMB_DB"
+      MONGO_INIT_ROOT_USERNAME: "user"
+      MONGO_INIT_ROOT_PASSWORD: "password"
+
