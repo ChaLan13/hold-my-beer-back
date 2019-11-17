@@ -1114,19 +1114,27 @@
         "signature": "653711fba8904aa27fd8911b63cf526e7b334e13a292da4cefdbbe179ac3f3f2"
       },
       "../src/app.controller.ts": {
-        "version": "260f889b9e2b69f77be1155348eb345166aec664b3efff6720053c6844a41f28",
+        "version": "12bb4e8ca399a9b4fe7764da24b857938803b0a1ed007007ab6d1bd24ce5ed88",
         "signature": "ef022c91ea9e75ab4082f2e881f9c4db7b346be2da706e876b253bebce5e6140"
       },
-      "../src/crud-beer/crud-beer.controller.ts": {
-        "version": "5b9e8e66856b0329ee398c6c28c6038343411788a980b287309087706bf59b16",
-        "signature": "cc973c6dd01553231cc172b62a0eb9865ee8935ac4dc38bd6147c0b5ec39ecda"
+      "../src/shared/interfaces/beer.ts": {
+        "version": "b374f617ee9363c6161e93e52a81730599ac1d2e6a0a3b77bbe58b8f6c237f2d",
+        "signature": "f4c2c92f35d37093e3801cfbbf67b95b65f046e1fd275e56dadc3800cd57abdb"
       },
-      "../src/crud-beer/crud-beer.module.ts": {
-        "version": "d2c200f513d190a03d5be2cde8382a11061feda2916941fc5e15c8956a665585",
+      "../src/data_temp/beers.ts": {
+        "version": "4983e96efd170036808f8e215670f0cd4412186cfdc8e2e85eb9e095995e192e",
+        "signature": "ba1e948682fb509ff8d0283c9bfb0ec04724aac9abc11e0f40ee1c8a3011e843"
+      },
+      "../src/crud/crud-beer.controller.ts": {
+        "version": "c0bfdd439b44831ca5b3a71496e70a5df61e7e0d7b8587c432a3c9f0f328edc4",
+        "signature": "b0cb1cd3fb6a29590f386486061cb9ccfaba9cae3db548ecb97dcfa5adc80782"
+      },
+      "../src/crud/crud-beer.module.ts": {
+        "version": "284042991630a5286d7192337df640f570ed494a463cec4fe161072622e2271f",
         "signature": "c82b72aae2b9265d68523509647f713309774c9e1fefeedc43b961a4a3c292d1"
       },
       "../src/app.module.ts": {
-        "version": "706a4a832bf71d60c10fb6e24354a73e009a49ebaed82885e975824d95c719d8",
+        "version": "bf0630f35354b448a2c382f0d5bf6cdd0546407ba1ec277cd9820bf3a55967aa",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644"
       },
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts": {
@@ -1272,10 +1280,6 @@
       "../src/main.ts": {
         "version": "fd9d95791a4d1d09ef1157c92addda36e44a325e084c45da14691f9afd866743",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
-      },
-      "../src/shared/interfaces/beer.ts": {
-        "version": "b374f617ee9363c6161e93e52a81730599ac1d2e6a0a3b77bbe58b8f6c237f2d",
-        "signature": "f4c2c92f35d37093e3801cfbbf67b95b65f046e1fd275e56dadc3800cd57abdb"
       },
       "../node_modules/@types/anymatch/index.d.ts": {
         "version": "48b52264fa193879a074197839dbb4796fa07e86350ff888e5361e06aa46df76",
@@ -3634,16 +3638,32 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/crud-beer/crud-beer.controller.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
+      "../src/shared/interfaces/beer.ts": [
+        "../node_modules/@types/node/url.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/crud-beer/crud-beer.module.ts": [
+      "../src/data_temp/beers.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/crud/crud-beer.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
-        "../src/crud-beer/crud-beer.controller.ts",
+        "../node_modules/rxjs/index.d.ts",
+        "../src/shared/interfaces/beer.ts",
+        "../src/data_temp/beers.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/crud/crud-beer.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/crud/crud-beer.controller.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -3653,7 +3673,7 @@
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/app.controller.ts",
         "../src/app.service.ts",
-        "../src/crud-beer/crud-beer.module.ts",
+        "../src/crud/crud-beer.module.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -3977,13 +3997,6 @@
         "../node_modules/@nestjs/platform-fastify/index.d.ts",
         "../src/app.module.ts",
         "../src/app-config.interface.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/shared/interfaces/beer.ts": [
-        "../node_modules/@types/node/url.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -6436,6 +6449,10 @@
       "../src/app.controller.ts": [
         "../src/app.service.ts"
       ],
+      "../src/crud/crud-beer.controller.ts": [
+        "../node_modules/rxjs/index.d.ts",
+        "../src/shared/interfaces/beer.ts"
+      ],
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/@nestjs/common/interfaces/index.d.ts",
@@ -7294,7 +7311,10 @@
       "../node_modules/@nestjs/common/index.d.ts",
       "../src/app.service.ts",
       "../src/app.controller.ts",
-      "../src/crud-beer/crud-beer.controller.ts",
+      "../src/shared/interfaces/beer.ts",
+      "../src/data_temp/beers.ts",
+      "../src/crud/crud-beer.module.ts",
+      "../src/app.module.ts",
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts",
       "../node_modules/@nestjs/core/adapters/index.d.ts",
       "../node_modules/@nestjs/core/constants.d.ts",
@@ -7331,7 +7351,6 @@
       "../node_modules/@nestjs/platform-fastify/interfaces/index.d.ts",
       "../node_modules/@nestjs/platform-fastify/index.d.ts",
       "../src/main.ts",
-      "../src/shared/interfaces/beer.ts",
       "../node_modules/@types/anymatch/index.d.ts",
       "../node_modules/@babel/types/lib/index.d.ts",
       "../node_modules/@types/babel__generator/index.d.ts",
@@ -7368,8 +7387,7 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/crud-beer/crud-beer.module.ts",
-      "../src/app.module.ts"
+      "../src/crud/crud-beer.controller.ts"
     ]
   },
   "version": "3.7.2"
