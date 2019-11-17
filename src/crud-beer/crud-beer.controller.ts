@@ -1,4 +1,13 @@
-import { Controller } from '@nestjs/common';
+import {Controller, Get} from '@nestjs/common';
 
 @Controller('crud-beer')
-export class CrudBeerController {}
+export class CrudBeerController {
+
+    /**
+     * test : hello World
+     */
+    @Get()
+    sayHello(): string {
+        return 'hello';
+    }
+}

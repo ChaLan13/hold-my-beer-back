@@ -1,10 +1,10 @@
 import { Module } from '@nestjs/common';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
-import { CrudBearModule } from './crud-bear/crud-bear.module';
+import { CrudBeerModule } from './crud-beer/crud-beer.module';
 
 @Module({
-  imports: [CrudBearModule],
+  imports: [CrudBeerModule],
   controllers: [AppController],
   providers: [AppService],
 })
