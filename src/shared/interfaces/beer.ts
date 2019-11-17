@@ -4,11 +4,10 @@ export interface Beer {
     id?: string;
     name: string;
     country?: string;
-    cereal?: Array<string>; // min 1, max 10
-    birth: number;
+    cereal?: string[]; // min 1, max 10
+    birthYear: number;
 
 }
-
 
 export interface Shop {
     priceALiter: number; // price of the beer for a liter
