@@ -6,7 +6,7 @@ export interface Beer {
     country?: string;
     cereal?: string[]; // min 1, max 10
     birthYear: string;
-    shop?: Shop;
+    shop?: Shop[];
 }
 
 export interface Shop {
