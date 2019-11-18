@@ -1,12 +1,12 @@
 import * as url from 'url';
 
 export interface Beer {
-    id?: string;
+    id: string;
     name: string;
     country?: string;
     cereal?: string[]; // min 1, max 10
-    birthYear: number;
-
+    birthYear: string;
+    shop?: Shop;
 }
 
 export interface Shop {

@@ -23,6 +23,7 @@ export class BeerInterceptor implements NestInterceptor {
         const cls = context.getClass();
         const handler = context.getHandler();
         const response: FastifyReply<ServerResponse> = context.switchToHttp().getResponse<FastifyReply<ServerResponse>>();
+        const logCtx: string = `PeopleInterceptor => ${cls.name}.${handler.name}`;
 
         return next.handle()
             .pipe(
@@ -41,7 +42,10 @@ export class BeerInterceptor implements NestInterceptor {
                                 map(_ => _),
                             ),
                     )),
-                tap(_ => this._logger.log(!!_ ? _ : 'NO CONTENT', `BeerInterceptor => ${cls.name}.${handler.name}`)),
-            );
+                    tap(
+                        _ => this._logger.log(!!_ ? _ : 'NO CONTENT', logCtx),
+                        _ => this._logger.error(_.message, JSON.stringify(_), logCtx),
+                    ),
+                );
     }
 }

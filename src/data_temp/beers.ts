@@ -4,20 +4,20 @@ export const BEERS = [
         name: 'Pilsner',
         country: 'Germany',
         cereal: ['malt'],
-        birthYear: 1842,
+        birthYear: '1842',
     },
     {
         id: '5763cd4d51fdb6588742f99e',
         name: 'Guinness Classic',
         country: 'Ireland',
         cereal: ['hop'],
-        birthYear: 1759,
+        birthYear: '1759',
     },
     {
         id: '5763cd4dba6362a3f92c954e',
         name: 'Delirium',
         country: 'Ireland',
         cereal: ['hop'],
-        birthYear: 1902,
+        birthYear: '1902',
     },
 ];
