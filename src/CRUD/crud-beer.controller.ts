@@ -1,10 +1,11 @@
-import {Body, Controller, Get, Param, Post, UseInterceptors} from '@nestjs/common';
+import {Body, Controller, Get, Param, Post, Put, UseInterceptors} from '@nestjs/common';
 import { Observable, of} from 'rxjs';
 import { Beer } from '../shared/interfaces/beer';
 import { BEERS } from '../data_temp/beers';
 import {BeerInterceptor} from './interceptor/beer.interceptor';
 import {CrudBeerServiceService} from './crud-beer.service';
 import {CreateBeerDto} from './dto/create-beer.dto';
+import {UpdateBeerDto} from './dto/update-beer.dto';
 
 @Controller('crud-beer')
 @UseInterceptors(BeerInterceptor)
@@ -79,5 +80,18 @@ export class CrudBeerController {
     @Post()
     create(@Body() createBeerDto: CreateBeerDto): Observable<Beer> {
         return this._beerService.create(createBeerDto);
+    }
+
+    /**
+     * Handler to answer to /beer route
+     *
+     * @param id
+     * @param updateBeerDto
+     *
+     * @returns Observable<Beer>
+     */
+    @Put(':id')
+    update(@Param('id') id: string, @Body() updateBeerDto: UpdateBeerDto): Observable<Beer> {
+        return this._beerService.update(id, updateBeerDto);
     }
 }

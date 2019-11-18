@@ -1,9 +1,10 @@
 import {ConflictException, Injectable, NotFoundException} from '@nestjs/common';
 import {from, Observable, of, throwError} from 'rxjs';
 import {Beer} from '../shared/interfaces/beer';
-import {find, flatMap, map, tap} from 'rxjs/operators';
+import {find, findIndex, flatMap, map, tap} from 'rxjs/operators';
 import { BEERS } from '../data_temp/beers';
 import {CreateBeerDto} from './dto/create-beer.dto';
+import {UpdateBeerDto} from './dto/update-beer.dto';
 
 @Injectable()
 export class CrudBeerServiceService {
@@ -85,7 +86,7 @@ export class CrudBeerServiceService {
     }
 
     /**
-     * Check if person already exists and add it in people list
+     * Check if beer already exists and add it in people list
      *
      * @param beer to create
      *
@@ -106,7 +107,7 @@ export class CrudBeerServiceService {
     }
 
     /**
-     * Add person with good data in people list
+     * Add beer with good data in beer list
      *
      * @param beer to add
      *
@@ -123,6 +124,42 @@ export class CrudBeerServiceService {
                     }) as Beer,
                 ),
                 tap(_ => this._beer = this._beer.concat(_)),
+            );
+    }
+
+    /**
+     * Update a beer in beer list
+     *
+     * @param {string} id of the beer to update
+     * @param beer data to update
+     *
+     * @returns {Observable<Beer>}
+     */
+    update(id: string, beer: UpdateBeerDto): Observable<Beer> {
+        return this._findBeerIndexOfList(id)
+            .pipe(
+                tap(_ => Object.assign(this._beer[ _ ], beer)),
+                map(_ => this._beer[ _ ]),
+            );
+    }
+
+    /**
+     * Finds index of array for current beer
+     *
+     * @param {string} id of the beer to find
+     *
+     * @returns {Observable<number>}
+     *
+     * @private
+     */
+    private _findBeerIndexOfList(id: string): Observable<number> {
+        return from(this._beer)
+            .pipe(
+                findIndex(_ => _.id === id),
+                flatMap(_ => _ > -1 ?
+                    of(_) :
+                    throwError(new NotFoundException(`Beer with id '${id}' not found`)),
+                ),
             );
     }
 
