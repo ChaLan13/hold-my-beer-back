@@ -5,6 +5,7 @@ import {find, findIndex, flatMap, map, tap} from 'rxjs/operators';
 import { BEERS } from '../data_temp/beers';
 import {CreateBeerDto} from './dto/create-beer.dto';
 import {UpdateBeerDto} from './dto/update-beer.dto';
+import {BeerEntity} from './entities/beer.entity';
 
 @Injectable()
 export class CrudBeerServiceService {
@@ -23,12 +24,12 @@ export class CrudBeerServiceService {
     /**
      * Returns all existing beer in the list
      *
-     * @returns {Observable<Beer[] | void>}
+     * @returns {Observable<BeerEntity[] | void>}
      */
-    findAll(): Observable<Beer[] | void> {
+    findAll(): Observable<BeerEntity[] | void> {
         return of(this._beer)
             .pipe(
-                map(_ => (!!_ && !!_.length) ? _ : undefined),
+                map(_ => (!!_ && !!_.length) ? _.map(__ => new BeerEntity(__)) : undefined),
             );
     }
 
@@ -57,12 +58,12 @@ export class CrudBeerServiceService {
     /**
      * Returns randomly one beer of the list
      *
-     * @returns {Observable<Beer | void>}
+     * @returns {Observable<BeerEntity | void>}
      */
-    findRandom(): Observable<Beer | void> {
+    findRandom(): Observable<BeerEntity | void> {
         return of(this._beer[ Math.round(Math.random() * this._beer.length) ])
             .pipe(
-                map(_ => !!_ ? _ : undefined),
+                map(_ => !!_ ? new BeerEntity(_) : undefined),
             );
     }
 
@@ -71,15 +72,15 @@ export class CrudBeerServiceService {
      *
      * @param {string} id of the beer
      *
-     * @returns {Observable<Beer>}
+     * @returns {Observable<BeerEntity>}
      */
-    findOne(id: string): Observable<Beer> {
+    findOne(id: string): Observable<BeerEntity> {
         return from(this._beer)
             .pipe(
                 find(_ => _.id === id),
                 flatMap(_ =>
                     !!_ ?
-                        of(_) :
+                        of(new BeerEntity(_)) :
                         throwError(new NotFoundException(`People with id '${id}' not found`)),
                 ),
             );
@@ -92,7 +93,7 @@ export class CrudBeerServiceService {
      *
      * @returns {Observable<Beer>}
      */
-    create(beer: CreateBeerDto): Observable<Beer> {
+    create(beer: CreateBeerDto): Observable<BeerEntity> {
         return from(this._beer)
             .pipe(
                 find(_ => _.name.toLowerCase() === beer.name.toLowerCase() ),
@@ -111,11 +112,11 @@ export class CrudBeerServiceService {
      *
      * @param beer to add
      *
-     * @returns {Observable<Beer>}
+     * @returns {Observable<BeerEntity>}
      *
      * @private
      */
-    private _addBeer(beer: CreateBeerDto): Observable<Beer> {
+    private _addBeer(beer: CreateBeerDto): Observable<BeerEntity> {
         return of(beer)
             .pipe(
                 map(_ =>
@@ -124,6 +125,7 @@ export class CrudBeerServiceService {
                     }) as Beer,
                 ),
                 tap(_ => this._beer = this._beer.concat(_)),
+                map(_ => new BeerEntity(_)),
             );
     }
 
@@ -133,13 +135,28 @@ export class CrudBeerServiceService {
      * @param {string} id of the beer to update
      * @param beer data to update
      *
-     * @returns {Observable<Beer>}
+     * @returns {Observable<BeerEntity>}
      */
-    update(id: string, beer: UpdateBeerDto): Observable<Beer> {
+    update(id: string, beer: UpdateBeerDto): Observable<BeerEntity> {
         return this._findBeerIndexOfList(id)
             .pipe(
                 tap(_ => Object.assign(this._beer[ _ ], beer)),
-                map(_ => this._beer[ _ ]),
+                map(_ => new BeerEntity(this._beer[ _ ])),
+            );
+    }
+
+    /**
+     * Deletes one person in people list
+     *
+     * @param {string} id of the person to delete
+     *
+     * @returns {Observable<void>}
+     */
+    delete(id: string): Observable<void> {
+        return this._findBeerIndexOfList(id)
+            .pipe(
+                tap(_ => this._beer.splice(_, 1)),
+                map(() => undefined),
             );
     }
 

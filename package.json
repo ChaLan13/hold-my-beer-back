@@ -23,11 +23,15 @@
     "@nestjs/common": "^6.7.2",
     "@nestjs/core": "^6.7.2",
     "@nestjs/platform-express": "^6.7.2",
+    "@nestjs/platform-fastify": "latest",
+    "class-transformer": "^0.2.3",
+    "class-validator": "^0.11.0",
+    "config": "latest",
+    "fastify-swagger": "^2.4.0",
     "reflect-metadata": "^0.1.13",
     "rimraf": "^3.0.0",
     "rxjs": "^6.5.3",
-    "@nestjs/platform-fastify": "latest",
-    "config": "latest"
+    "@nestjs/swagger": "latest"
   },
   "devDependencies": {
     "@nestjs/cli": "^6.9.0",

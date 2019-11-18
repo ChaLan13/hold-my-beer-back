@@ -7,6 +7,10 @@ const app_module_1 = require("./app.module");
 const Config = require("config");
 async function bootstrap(config) {
     const app = await core_1.NestFactory.create(app_module_1.AppModule, new platform_fastify_1.FastifyAdapter({ logger: true }));
+    app.useGlobalPipes(new common_1.ValidationPipe({
+        whitelist: true,
+        forbidNonWhitelisted: true,
+    }));
     await app.listen(config.port, config.host);
     common_1.Logger.log(`Application served at http://${config.host}:${config.port}`, 'bootstrap');
 }

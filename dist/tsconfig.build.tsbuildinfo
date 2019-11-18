@@ -1545,25 +1545,101 @@
         "version": "64a48db1994ebeb526ff5f84bbb5ef4e2e819dc4482934ff92651ffb930f7ead",
         "signature": "9aafcd49fc44051fa5ef672206bd383e120eee96f7e08a9753e9cbdf0f56dd3a"
       },
+      "../node_modules/class-validator/validation/validationerror.d.ts": {
+        "version": "8b5ad058f8dab857050fdbb092b9f1267d22641f0f746cd8a7abee85b48bb83a",
+        "signature": "8b5ad058f8dab857050fdbb092b9f1267d22641f0f746cd8a7abee85b48bb83a"
+      },
+      "../node_modules/class-validator/validation/validatoroptions.d.ts": {
+        "version": "d3c0c471c298dc7115ada6c07f78d4fafb088523a301cb539c5cb44dae009954",
+        "signature": "d3c0c471c298dc7115ada6c07f78d4fafb088523a301cb539c5cb44dae009954"
+      },
+      "../node_modules/class-validator/validation-schema/validationschema.d.ts": {
+        "version": "86f89124a90fae1b90421bcce1e0ba58614383ca72403bfc03ff89761b050a4d",
+        "signature": "86f89124a90fae1b90421bcce1e0ba58614383ca72403bfc03ff89761b050a4d"
+      },
+      "../node_modules/class-validator/container.d.ts": {
+        "version": "5a6fbec8c8e62c37e9685a91a6ef0f6ecaddb1ee90f7b2c2b71b454b40a0d9a6",
+        "signature": "5a6fbec8c8e62c37e9685a91a6ef0f6ecaddb1ee90f7b2c2b71b454b40a0d9a6"
+      },
+      "../node_modules/@types/validator/index.d.ts": {
+        "version": "930f4dcf2bf161cde0f737e6fb1ee8ad1c54f3b7bdf64d18adc4c2521f48aaa8",
+        "signature": "930f4dcf2bf161cde0f737e6fb1ee8ad1c54f3b7bdf64d18adc4c2521f48aaa8"
+      },
+      "../node_modules/class-validator/validation/validationtypeoptions.d.ts": {
+        "version": "367b353f3a003d31a72ad3b1cef5c933b71889ae86cb645520d1681014e79ab9",
+        "signature": "367b353f3a003d31a72ad3b1cef5c933b71889ae86cb645520d1681014e79ab9"
+      },
+      "../node_modules/class-validator/validation/validationarguments.d.ts": {
+        "version": "f049af45e62625e0be51a3badd311110abf1ac8b23f56689e1d850923f6d9aac",
+        "signature": "f049af45e62625e0be51a3badd311110abf1ac8b23f56689e1d850923f6d9aac"
+      },
+      "../node_modules/class-validator/decorator/validationoptions.d.ts": {
+        "version": "e700a3327eb9f018b9af7a56d9214383919103950141d2e44a4a1cd59bbe67c6",
+        "signature": "e700a3327eb9f018b9af7a56d9214383919103950141d2e44a4a1cd59bbe67c6"
+      },
+      "../node_modules/class-validator/decorator/decorators.d.ts": {
+        "version": "34d83ecda22cb58a70c3c51bb356d94222ed15ba82880dfb7309e74d281804ef",
+        "signature": "34d83ecda22cb58a70c3c51bb356d94222ed15ba82880dfb7309e74d281804ef"
+      },
+      "../node_modules/class-validator/validation/validatorconstraintinterface.d.ts": {
+        "version": "8e7c8386c3700086085770ac298d37de34bd290db95938f5c77f1ab83fa67c52",
+        "signature": "8e7c8386c3700086085770ac298d37de34bd290db95938f5c77f1ab83fa67c52"
+      },
+      "../node_modules/class-validator/validation/validationtypes.d.ts": {
+        "version": "b9448353389cfb3d7fed5fc0d23ca87b0ac16149b89ba8c9c8ae568d01b8c3ad",
+        "signature": "b9448353389cfb3d7fed5fc0d23ca87b0ac16149b89ba8c9c8ae568d01b8c3ad"
+      },
+      "../node_modules/class-validator/metadata/validationmetadataargs.d.ts": {
+        "version": "8f29f65ce09040175a948aeb38af31f34367123903c49b556a76097bcb8fe813",
+        "signature": "8f29f65ce09040175a948aeb38af31f34367123903c49b556a76097bcb8fe813"
+      },
+      "../node_modules/class-validator/metadata/validationmetadata.d.ts": {
+        "version": "8be85fd3849c702cd34aee594b4e9773dceca300cc358c63d75a3118720b12fe",
+        "signature": "8be85fd3849c702cd34aee594b4e9773dceca300cc358c63d75a3118720b12fe"
+      },
+      "../node_modules/class-validator/validation/validator.d.ts": {
+        "version": "3d0b16232d130758c990594006dd24361a7cf3a5efc86b1ec6d6af61c0b2ea67",
+        "signature": "3d0b16232d130758c990594006dd24361a7cf3a5efc86b1ec6d6af61c0b2ea67"
+      },
+      "../node_modules/class-validator/register-decorator.d.ts": {
+        "version": "ea96782b5b69f29f37be42c51f944a0a4a478cbe3fed1d2ec25cffd5bd3617a4",
+        "signature": "ea96782b5b69f29f37be42c51f944a0a4a478cbe3fed1d2ec25cffd5bd3617a4"
+      },
+      "../node_modules/class-validator/metadata/constraintmetadata.d.ts": {
+        "version": "bb71811f328b358d990e298006492de623964862240de7eb6342e5efb8aafae9",
+        "signature": "bb71811f328b358d990e298006492de623964862240de7eb6342e5efb8aafae9"
+      },
+      "../node_modules/class-validator/metadata/metadatastorage.d.ts": {
+        "version": "c569d4d6f3aa771dc1600a73bd8f1b714e10a75218379d93f9cf6bc13bbc0ab0",
+        "signature": "c569d4d6f3aa771dc1600a73bd8f1b714e10a75218379d93f9cf6bc13bbc0ab0"
+      },
+      "../node_modules/class-validator/index.d.ts": {
+        "version": "70aecfd981af29d74ba7ab6667b9cc2a53459d8eb099c139fd2aa54c3059c71d",
+        "signature": "70aecfd981af29d74ba7ab6667b9cc2a53459d8eb099c139fd2aa54c3059c71d"
+      },
       "../src/crud/dto/create-shop.dto.ts": {
-        "version": "d7be58cb00f99af2fb0de4580ecfd72366b087bd5f047f02ab52c31a6e220635",
-        "signature": "507bbf4b72d3cd636b6466a42b1e21d792564edcd0eb756497992cc11ad95c0e"
+        "version": "b0ee7f4e8973ebcec6ffcbfede8b8e1b97dde16053134500c0d27b41710a458b",
+        "signature": "bd254d1215ddc41aef86c8af0b3502fa99b07230273328bd235325da36caf8fa"
       },
       "../src/crud/dto/create-beer.dto.ts": {
-        "version": "bb11671e3f5edfbbbc258d5f27d49e542fc439f4818c2a3e259d378995dd366b",
-        "signature": "62407fed62536d05ee459f87044c5ddc4f7a3ebee5f10abc9e96a356c80fce53"
+        "version": "5d07f0f9227172e45a619f60b44a59e37d1284f6f34f4ef61c4b500e50488f94",
+        "signature": "0c847f995f263d1424f45f62473a0ae3880976e0c1c063ef8d999426d38a3345"
       },
       "../src/crud/dto/update-beer.dto.ts": {
         "version": "812f2c38553221044681cd945ff3cc80d62a543c516c5ba421231d258c373b6d",
         "signature": "74680e190eeb2ecb92ceb60ec1abcc5d9c85fa2e9bbdea7add626fd952cf1a42"
       },
       "../src/crud/crud-beer.service.ts": {
-        "version": "44675147774f578df929aa24f1f335f03b21eab5e060e80bd353b40efd7ccabd",
-        "signature": "1643e2a1225929cdaa6e8be2417f30015967a46c9751914ad3ec9854a6c861ee"
+        "version": "61f6fb9c6e729477f4166ef0a32a28b51ed202b3f72b97f26af9cdff2d4ae70e",
+        "signature": "f1e23ae4feb6fd9f5e7232169c1e6ed7ce411f24836277e49558066c50fe30f2"
+      },
+      "../src/crud/validators/handler-params.ts": {
+        "version": "a79951f1ca0999a4521b64d943f6003446e8b3226c1accb41e642841031ba0cf",
+        "signature": "0608f21bb8712c66fd2c1ee80afe3212b18e15197f4f88096448a5850beb5b24"
       },
       "../src/crud/crud-beer.controller.ts": {
-        "version": "d3d0cfad9a593d9f2b78efee93315e033d1f9a0f9ebf47e1826c43a1ac1ac8e7",
-        "signature": "54ba0206cb8596f9bc98f00998a68e85f07730b3f4b4345bee622dc2dc319943"
+        "version": "d78cf1b7c56c2765ea5b3e179d8b8d3c894316c0fb68d459f2a35aef377b8637",
+        "signature": "5882ff839768e7f3f3e31b89037f70238b006c8f66d63b7638c7220f2a5314d8"
       },
       "../src/crud/crud-beer.module.ts": {
         "version": "46f108f8800096f548d13fad92bcbf759ba03e24318378a72cbcac44a60f00a7",
@@ -1710,7 +1786,7 @@
         "signature": "1526c4260fa14e247f2abfcf26d76fd0c1e3d01ee69007424073c9da4f526b33"
       },
       "../src/main.ts": {
-        "version": "fd9d95791a4d1d09ef1157c92addda36e44a325e084c45da14691f9afd866743",
+        "version": "e93ae2f3d2fc0126002855fab80366cb6aed2fe9a979f280cf0d922cb7a7402d",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
       },
       "../node_modules/@types/anymatch/index.d.ts": {
@@ -1828,6 +1904,10 @@
       "../node_modules/@types/supertest/index.d.ts": {
         "version": "02a185b5e8d74b38264ffb77baa99e83969ba558958df28f971528dcbdd94876",
         "signature": "02a185b5e8d74b38264ffb77baa99e83969ba558958df28f971528dcbdd94876"
+      },
+      "../node_modules/@types/swagger-schema-official/index.d.ts": {
+        "version": "bdb9da4bbd0a58974aba838ed662ff9d7c00f2c9ddf1e13ca1ef6dc0c2dd0c32",
+        "signature": "bdb9da4bbd0a58974aba838ed662ff9d7c00f2c9ddf1e13ca1ef6dc0c2dd0c32"
       },
       "../node_modules/@types/tapable/index.d.ts": {
         "version": "c3175d4a7894de56cdc5e62f4269f1f57c2f08da88d3a91ad47bc0652ac8cb46",
@@ -4995,7 +5075,149 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../node_modules/class-validator/validation/validationerror.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validatoroptions.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation-schema/validationschema.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/container.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/validator/index.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validationtypeoptions.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validationarguments.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/decorator/validationoptions.d.ts": [
+        "../node_modules/class-validator/validation/validationarguments.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/decorator/decorators.d.ts": [
+        "../node_modules/class-validator/validation/validationtypeoptions.d.ts",
+        "../node_modules/class-validator/decorator/validationoptions.d.ts",
+        "../node_modules/@types/validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validatorconstraintinterface.d.ts": [
+        "../node_modules/class-validator/validation/validationarguments.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validationtypes.d.ts": [
+        "../node_modules/class-validator/validation/validationarguments.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/metadata/validationmetadataargs.d.ts": [
+        "../node_modules/class-validator/decorator/validationoptions.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/metadata/validationmetadata.d.ts": [
+        "../node_modules/class-validator/metadata/validationmetadataargs.d.ts",
+        "../node_modules/class-validator/validation/validationarguments.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validator.d.ts": [
+        "../node_modules/class-validator/metadata/validationmetadata.d.ts",
+        "../node_modules/class-validator/validation/validationerror.d.ts",
+        "../node_modules/class-validator/validation/validationtypeoptions.d.ts",
+        "../node_modules/class-validator/validation/validatoroptions.d.ts",
+        "../node_modules/@types/validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/register-decorator.d.ts": [
+        "../node_modules/class-validator/validation/validatoroptions.d.ts",
+        "../node_modules/class-validator/validation/validatorconstraintinterface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/metadata/constraintmetadata.d.ts": [
+        "../node_modules/class-validator/validation/validatorconstraintinterface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/metadata/metadatastorage.d.ts": [
+        "../node_modules/class-validator/metadata/validationmetadata.d.ts",
+        "../node_modules/class-validator/metadata/constraintmetadata.d.ts",
+        "../node_modules/class-validator/validation-schema/validationschema.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/index.d.ts": [
+        "../node_modules/class-validator/validation/validationerror.d.ts",
+        "../node_modules/class-validator/validation/validatoroptions.d.ts",
+        "../node_modules/class-validator/validation-schema/validationschema.d.ts",
+        "../node_modules/class-validator/container.d.ts",
+        "../node_modules/class-validator/decorator/decorators.d.ts",
+        "../node_modules/class-validator/decorator/validationoptions.d.ts",
+        "../node_modules/class-validator/validation/validatorconstraintinterface.d.ts",
+        "../node_modules/class-validator/validation/validationtypeoptions.d.ts",
+        "../node_modules/class-validator/validation/validationarguments.d.ts",
+        "../node_modules/class-validator/validation/validationtypes.d.ts",
+        "../node_modules/class-validator/validation/validator.d.ts",
+        "../node_modules/class-validator/register-decorator.d.ts",
+        "../node_modules/class-validator/metadata/metadatastorage.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/crud/dto/create-shop.dto.ts": [
+        "../node_modules/class-validator/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5003,6 +5225,7 @@
       ],
       "../src/crud/dto/create-beer.dto.ts": [
         "../src/crud/dto/create-shop.dto.ts",
+        "../node_modules/class-validator/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5028,6 +5251,13 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/crud/validators/handler-params.ts": [
+        "../node_modules/class-validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/crud/crud-beer.controller.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../node_modules/rxjs/index.d.ts",
@@ -5037,6 +5267,7 @@
         "../src/crud/crud-beer.service.ts",
         "../src/crud/dto/create-beer.dto.ts",
         "../src/crud/dto/update-beer.dto.ts",
+        "../src/crud/validators/handler-params.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5580,6 +5811,12 @@
       ],
       "../node_modules/@types/supertest/index.d.ts": [
         "../node_modules/@types/superagent/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/swagger-schema-official/index.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -8742,6 +8979,7 @@
         "../src/crud/crud-beer.service.ts",
         "../node_modules/rxjs/index.d.ts",
         "../src/shared/interfaces/beer.ts",
+        "../src/crud/validators/handler-params.ts",
         "../src/crud/dto/create-beer.dto.ts",
         "../src/crud/dto/update-beer.dto.ts"
       ],
@@ -9311,41 +9549,164 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validationerror.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/index.d.ts": [
+        "../node_modules/class-validator/validation/validationerror.d.ts",
+        "../node_modules/class-validator/validation/validatoroptions.d.ts",
+        "../node_modules/class-validator/validation-schema/validationschema.d.ts",
+        "../node_modules/class-validator/container.d.ts",
+        "../node_modules/class-validator/decorator/decorators.d.ts",
+        "../node_modules/class-validator/decorator/validationoptions.d.ts",
+        "../node_modules/class-validator/validation/validatorconstraintinterface.d.ts",
+        "../node_modules/class-validator/validation/validationtypeoptions.d.ts",
+        "../node_modules/class-validator/validation/validationarguments.d.ts",
+        "../node_modules/class-validator/validation/validationtypes.d.ts",
+        "../node_modules/class-validator/validation/validator.d.ts",
+        "../node_modules/class-validator/register-decorator.d.ts",
+        "../node_modules/class-validator/metadata/metadatastorage.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validator.d.ts": [
+        "../node_modules/class-validator/metadata/validationmetadata.d.ts",
+        "../node_modules/class-validator/validation/validationerror.d.ts",
+        "../node_modules/class-validator/validation/validationtypeoptions.d.ts",
+        "../node_modules/class-validator/validation/validatoroptions.d.ts",
+        "../node_modules/@types/validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validatoroptions.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/register-decorator.d.ts": [
+        "../node_modules/class-validator/validation/validatoroptions.d.ts",
+        "../node_modules/class-validator/validation/validatorconstraintinterface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation-schema/validationschema.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/metadata/metadatastorage.d.ts": [
+        "../node_modules/class-validator/metadata/validationmetadata.d.ts",
+        "../node_modules/class-validator/metadata/constraintmetadata.d.ts",
+        "../node_modules/class-validator/validation-schema/validationschema.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/container.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/validator/index.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validationtypeoptions.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/decorator/decorators.d.ts": [
+        "../node_modules/class-validator/validation/validationtypeoptions.d.ts",
+        "../node_modules/class-validator/decorator/validationoptions.d.ts",
+        "../node_modules/@types/validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validationarguments.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/metadata/validationmetadata.d.ts": [
+        "../node_modules/class-validator/metadata/validationmetadataargs.d.ts",
+        "../node_modules/class-validator/validation/validationarguments.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validationtypes.d.ts": [
+        "../node_modules/class-validator/validation/validationarguments.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/validation/validatorconstraintinterface.d.ts": [
+        "../node_modules/class-validator/validation/validationarguments.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/metadata/constraintmetadata.d.ts": [
+        "../node_modules/class-validator/validation/validatorconstraintinterface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/decorator/validationoptions.d.ts": [
+        "../node_modules/class-validator/validation/validationarguments.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-validator/metadata/validationmetadataargs.d.ts": [
+        "../node_modules/class-validator/decorator/validationoptions.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@types/swagger-schema-official/index.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
-      "../node_modules/typescript/lib/lib.es5.d.ts",
-      "../node_modules/typescript/lib/lib.es2015.d.ts",
-      "../node_modules/typescript/lib/lib.es2016.d.ts",
-      "../node_modules/typescript/lib/lib.es2017.d.ts",
-      "../node_modules/typescript/lib/lib.es2018.d.ts",
-      "../node_modules/typescript/lib/lib.dom.d.ts",
-      "../node_modules/typescript/lib/lib.dom.iterable.d.ts",
-      "../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
-      "../node_modules/typescript/lib/lib.scripthost.d.ts",
-      "../node_modules/typescript/lib/lib.es2015.core.d.ts",
-      "../node_modules/typescript/lib/lib.es2015.collection.d.ts",
-      "../node_modules/typescript/lib/lib.es2015.generator.d.ts",
-      "../node_modules/typescript/lib/lib.es2015.iterable.d.ts",
-      "../node_modules/typescript/lib/lib.es2015.promise.d.ts",
-      "../node_modules/typescript/lib/lib.es2015.proxy.d.ts",
-      "../node_modules/typescript/lib/lib.es2015.reflect.d.ts",
-      "../node_modules/typescript/lib/lib.es2015.symbol.d.ts",
-      "../node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
-      "../node_modules/typescript/lib/lib.es2016.array.include.d.ts",
-      "../node_modules/typescript/lib/lib.es2017.object.d.ts",
-      "../node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts",
-      "../node_modules/typescript/lib/lib.es2017.string.d.ts",
-      "../node_modules/typescript/lib/lib.es2017.intl.d.ts",
-      "../node_modules/typescript/lib/lib.es2017.typedarrays.d.ts",
-      "../node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts",
-      "../node_modules/typescript/lib/lib.es2018.asynciterable.d.ts",
-      "../node_modules/typescript/lib/lib.es2018.intl.d.ts",
-      "../node_modules/typescript/lib/lib.es2018.promise.d.ts",
-      "../node_modules/typescript/lib/lib.es2018.regexp.d.ts",
-      "../node_modules/typescript/lib/lib.esnext.intl.d.ts",
-      "../node_modules/typescript/lib/lib.esnext.bigint.d.ts",
-      "../node_modules/typescript/lib/lib.es2017.full.d.ts",
+      "../node_modules/class-validator/validation/validationerror.d.ts",
+      "../node_modules/class-validator/validation/validator.d.ts",
+      "../node_modules/class-validator/validation/validatoroptions.d.ts",
+      "../node_modules/class-validator/register-decorator.d.ts",
+      "../node_modules/class-validator/validation-schema/validationschema.d.ts",
+      "../node_modules/class-validator/metadata/metadatastorage.d.ts",
+      "../node_modules/class-validator/container.d.ts",
+      "../node_modules/@types/validator/index.d.ts",
       "../src/app-config.interface.ts",
       "../node_modules/reflect-metadata/index.d.ts",
       "../node_modules/@nestjs/common/cache/cache.constants.d.ts",
@@ -9700,9 +10061,19 @@
       "../node_modules/rxjs/operators/index.d.ts",
       "../node_modules/fastify/fastify.d.ts",
       "../src/crud/interceptor/beer.interceptor.ts",
-      "../src/crud/dto/create-shop.dto.ts",
-      "../src/crud/dto/create-beer.dto.ts",
+      "../node_modules/class-validator/validation/validationtypeoptions.d.ts",
+      "../node_modules/class-validator/validation/validationarguments.d.ts",
+      "../node_modules/class-validator/decorator/validationoptions.d.ts",
+      "../node_modules/class-validator/decorator/decorators.d.ts",
+      "../node_modules/class-validator/validation/validatorconstraintinterface.d.ts",
+      "../node_modules/class-validator/validation/validationtypes.d.ts",
+      "../node_modules/class-validator/metadata/validationmetadataargs.d.ts",
+      "../node_modules/class-validator/metadata/validationmetadata.d.ts",
+      "../node_modules/class-validator/metadata/constraintmetadata.d.ts",
       "../src/crud/dto/update-beer.dto.ts",
+      "../src/crud/crud-beer.service.ts",
+      "../src/crud/crud-beer.controller.ts",
+      "../src/crud/crud-beer.module.ts",
       "../src/app.module.ts",
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts",
       "../node_modules/@nestjs/core/adapters/index.d.ts",
@@ -9768,6 +10139,7 @@
       "../node_modules/@types/stack-utils/index.d.ts",
       "../node_modules/@types/superagent/index.d.ts",
       "../node_modules/@types/supertest/index.d.ts",
+      "../node_modules/@types/swagger-schema-official/index.d.ts",
       "../node_modules/@types/tapable/index.d.ts",
       "../node_modules/source-map/source-map.d.ts",
       "../node_modules/@types/uglify-js/index.d.ts",
@@ -9775,9 +10147,42 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/crud/crud-beer.service.ts",
-      "../src/crud/crud-beer.controller.ts",
-      "../src/crud/crud-beer.module.ts"
+      "../node_modules/typescript/lib/lib.es5.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.d.ts",
+      "../node_modules/typescript/lib/lib.es2016.d.ts",
+      "../node_modules/typescript/lib/lib.es2017.d.ts",
+      "../node_modules/typescript/lib/lib.es2018.d.ts",
+      "../node_modules/typescript/lib/lib.dom.d.ts",
+      "../node_modules/typescript/lib/lib.dom.iterable.d.ts",
+      "../node_modules/typescript/lib/lib.webworker.importscripts.d.ts",
+      "../node_modules/typescript/lib/lib.scripthost.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.core.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.collection.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.generator.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.iterable.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.promise.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.proxy.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.reflect.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.symbol.d.ts",
+      "../node_modules/typescript/lib/lib.es2015.symbol.wellknown.d.ts",
+      "../node_modules/typescript/lib/lib.es2016.array.include.d.ts",
+      "../node_modules/typescript/lib/lib.es2017.object.d.ts",
+      "../node_modules/typescript/lib/lib.es2017.sharedmemory.d.ts",
+      "../node_modules/typescript/lib/lib.es2017.string.d.ts",
+      "../node_modules/typescript/lib/lib.es2017.intl.d.ts",
+      "../node_modules/typescript/lib/lib.es2017.typedarrays.d.ts",
+      "../node_modules/typescript/lib/lib.es2018.asyncgenerator.d.ts",
+      "../node_modules/typescript/lib/lib.es2018.asynciterable.d.ts",
+      "../node_modules/typescript/lib/lib.es2018.intl.d.ts",
+      "../node_modules/typescript/lib/lib.es2018.promise.d.ts",
+      "../node_modules/typescript/lib/lib.es2018.regexp.d.ts",
+      "../node_modules/typescript/lib/lib.esnext.intl.d.ts",
+      "../node_modules/typescript/lib/lib.esnext.bigint.d.ts",
+      "../node_modules/typescript/lib/lib.es2017.full.d.ts",
+      "../node_modules/class-validator/index.d.ts",
+      "../src/crud/dto/create-shop.dto.ts",
+      "../src/crud/dto/create-beer.dto.ts",
+      "../src/crud/validators/handler-params.ts"
     ]
   },
   "version": "3.7.2"
