@@ -1,21 +1,24 @@
 import {ConflictException, Injectable, NotFoundException} from '@nestjs/common';
 import {from, Observable, of, throwError} from 'rxjs';
-import {Beer} from '../shared/interfaces/beer';
+import {BeerInterface} from '../shared/interfaces/beer.interface';
 import {find, findIndex, flatMap, map, tap} from 'rxjs/operators';
 import { BEERS } from '../data_temp/beers';
 import {CreateBeerDto} from './dto/create-beer.dto';
 import {UpdateBeerDto} from './dto/update-beer.dto';
 import {BeerEntity} from './entities/beer.entity';
+import {BeerDao} from './dao/beer.dao';
 
 @Injectable()
 export class CrudBeerServiceService {
     // private property to store all people
-    private _beer: Beer[];
+    private _beer: BeerInterface[];
 
     /**
      * Class constructor
+     *
+     * @param {BeerDao} _beerDao instance of the DAO
      */
-    constructor() {
+    constructor(private readonly _beerDao: BeerDao) {
         this._beer = [].concat(BEERS).map(beer => Object.assign(beer, {
             birthYear: this._parseDate(beer.birthYear),
         }));
@@ -27,9 +30,9 @@ export class CrudBeerServiceService {
      * @returns {Observable<BeerEntity[] | void>}
      */
     findAll(): Observable<BeerEntity[] | void> {
-        return of(this._beer)
+        return this._beerDao.find()
             .pipe(
-                map(_ => (!!_ && !!_.length) ? _.map(__ => new BeerEntity(__)) : undefined),
+                map(_ => !!_ ? _.map(__ => new BeerEntity(__)) : undefined),
             );
     }
 
@@ -91,7 +94,7 @@ export class CrudBeerServiceService {
      *
      * @param beer to create
      *
-     * @returns {Observable<Beer>}
+     * @returns {Observable<BeerInterface>}
      */
     create(beer: CreateBeerDto): Observable<BeerEntity> {
         return from(this._beer)
@@ -122,7 +125,7 @@ export class CrudBeerServiceService {
                 map(_ =>
                     Object.assign(_, {
                         id: this._createId(),
-                    }) as Beer,
+                    }) as BeerInterface,
                 ),
                 tap(_ => this._beer = this._beer.concat(_)),
                 map(_ => new BeerEntity(_)),

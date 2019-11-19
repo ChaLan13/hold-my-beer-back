@@ -1,6 +1,7 @@
 import * as url from 'url';
+import { Document } from 'mongoose';
 
-export interface Beer {
+export interface BeerInterface extends Document {
     id: string;
     name: string;
     country?: string;

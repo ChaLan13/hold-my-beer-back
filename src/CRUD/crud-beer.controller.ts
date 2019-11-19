@@ -1,6 +1,6 @@
 import {Body, ClassSerializerInterceptor, Controller, Delete, Get, Param, Post, Put, UseInterceptors} from '@nestjs/common';
 import { Observable, of} from 'rxjs';
-import { Beer } from '../shared/interfaces/beer';
+import { BeerInterface } from '../shared/interfaces/beer.interface';
 import { BEERS } from '../data_temp/beers';
 import {BeerInterceptor} from './interceptor/beer.interceptor';
 import {CrudBeerServiceService} from './crud-beer.service';
@@ -46,7 +46,7 @@ export class CrudBeerController {
     /**
      * return all the beer in the DB
      *
-     * @returns Observable<Beer[] | void>
+     * @returns Observable<BeerInterface[] | void>
      */
     @ApiOkResponse({ description: 'Returns an array of beer', type: BeerEntity, isArray: true })
     @ApiNoContentResponse({ description: 'No beer exists in database' })
@@ -60,7 +60,7 @@ export class CrudBeerController {
      * Handler to answer to /crud-beer/random route
      * insn't working for now
      *
-     * @returns Observable<Beer | void>
+     * @returns Observable<BeerInterface | void>
      */
     @ApiOkResponse({ description: 'Returns a beer randomly', type: BeerEntity })
     @ApiNoContentResponse({ description: 'No beer exists in database' })
@@ -74,10 +74,10 @@ export class CrudBeerController {
      *
      * @param {HandlerParams} params list of route params to take beer id
      *
-     * @returns Observable<Beer>
+     * @returns Observable<BeerInterface>
      */
     @ApiOkResponse({ description: 'Returns the beer for the given "id"', type: BeerEntity })
-    @ApiNotFoundResponse({ description: 'Beer with the given "id" doesn\'t exist in the database' })
+    @ApiNotFoundResponse({ description: 'BeerInterface with the given "id" doesn\'t exist in the database' })
     @ApiBadRequestResponse({ description: 'Parameter provided is not good' })
     @ApiImplicitParam({ name: 'id', description: 'Unique identifier of the beer in the database', type: String })
     @Get(':id')
@@ -90,7 +90,7 @@ export class CrudBeerController {
      *
      * @param createBeerDto data to create
      *
-     * @returns Observable<Beer>
+     * @returns Observable<BeerInterface>
      */
     @ApiCreatedResponse({ description: 'The beer has been successfully created', type: BeerEntity })
     @ApiConflictResponse({ description: 'The beer already exists in the database' })
@@ -107,10 +107,10 @@ export class CrudBeerController {
      * @param {HandlerParams} params list of route params to take beer id
      * @param updateBeerDto data to update
      *
-     * @returns Observable<Beer>
+     * @returns Observable<BeerInterface>
      */
     @ApiOkResponse({ description: 'The beer has been successfully updated', type: BeerEntity })
-    @ApiNotFoundResponse({ description: 'Beer with the given "id" doesn\'t exist in the database' })
+    @ApiNotFoundResponse({ description: 'BeerInterface with the given "id" doesn\'t exist in the database' })
     @ApiBadRequestResponse({ description: 'Parameter and/or payload provided are not good' })
     @ApiImplicitParam({ name: 'id', description: 'Unique identifier of the beer in the database', type: String })
     @ApiImplicitBody({ name: 'UpdateBeerDto', description: 'Payload to update a person', type: UpdateBeerDto })
@@ -127,7 +127,7 @@ export class CrudBeerController {
      * @returns Observable<void>
      */
     @ApiNoContentResponse({ description: 'The beer has been successfully deleted' })
-    @ApiNotFoundResponse({ description: 'Beer with the given "id" doesn\'t exist in the database' })
+    @ApiNotFoundResponse({ description: 'BeerInterface with the given "id" doesn\'t exist in the database' })
     @ApiBadRequestResponse({ description: 'Parameter provided is not good' })
     @ApiImplicitParam({ name: 'id', description: 'Unique identifier of the beer in the database', type: String })
     @Delete(':id')
