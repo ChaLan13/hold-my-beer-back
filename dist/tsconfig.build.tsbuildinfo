@@ -1722,16 +1722,16 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f"
       },
       "../src/crud/dto/create-shop.dto.ts": {
-        "version": "6fb992442baef078204758826ea7631207259d93883f7aa59efdd638b7e476ae",
+        "version": "11cbe2999b0d65787752abaec7fbe92780e7a3a31ad19f593992326788a5e9b0",
         "signature": "bd254d1215ddc41aef86c8af0b3502fa99b07230273328bd235325da36caf8fa"
       },
       "../src/crud/dto/create-beer.dto.ts": {
-        "version": "d5b1193d060d5d3335ed456fd36a4d0b88049ec7609efa3b3b2ea162eae17830",
-        "signature": "0c847f995f263d1424f45f62473a0ae3880976e0c1c063ef8d999426d38a3345"
+        "version": "de5e90e3ae8efc4453ce6f784a52d684f9fa5156b25113a86c5a261e40b07b69",
+        "signature": "fdbf4b0e1db8db8605b955f1bad621da0af8b7dd4841e71450e487ddafd70bef"
       },
       "../src/crud/dto/update-beer.dto.ts": {
-        "version": "f1897604ce369e244009e34f423715d3629df61293767340bc6d06837c773923",
-        "signature": "f3516ba850a6ce839b990af72ccffcd576e1e8e3c3254b5e864038339aa1a257"
+        "version": "a18202752dd331fd4323c6b199c2335b3b4f10201d4d801cba8e14c7b2e0b2da",
+        "signature": "694f5a55d7c6e54ff9be665daae36113094c5cd9788e5d6b3e1382d280a4fbd8"
       },
       "../node_modules/class-transformer/classtransformoptions.d.ts": {
         "version": "d89af0c250e1424959162beae79f2c2745c729d6ab8028503d322395d96d3a2b",
@@ -1806,7 +1806,7 @@
         "signature": "2dce5fa3a9603828c4ab242050a7d8cf50c3c668b35b4b82e67e7282619ee535"
       },
       "../src/crud/crud-beer.service.ts": {
-        "version": "5bde8cd94ece4009bf6ee424855023d4963e9fcccd5cf298355a90b42e5f3bed",
+        "version": "6cc645100f4b42f381140e4e3a36ce6d0965e44431c6629d114b265e05359673",
         "signature": "31ed07728d135c63c064a5d92794bbcdf91ef3f829ac3a43a34a7ca43c4d07c9"
       },
       "../src/crud/validators/handler-params.ts": {
@@ -1818,7 +1818,7 @@
         "signature": "d238e9890890975b3b8fa23061f24969c5ff873904fdd80723467875bbf404b1"
       },
       "../src/crud/schema/crud-beer.schema.ts": {
-        "version": "42c05ac3365c147f2fb99b059039f9b5872c19949db086f948a54734a2e6e622",
+        "version": "3f861e41efba89da06ea0bfca8d9fed6572c49143423e66ee30346738254c9f9",
         "signature": "1e6d3a5d5070552f4126e7ef0a244eda3fe2745a7c81229f011f929b1f7c914e"
       },
       "../src/crud/crud-beer.module.ts": {
@@ -11012,9 +11012,9 @@
       "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts",
       "../node_modules/@nestjs/mongoose/dist/index.d.ts",
       "../node_modules/@nestjs/mongoose/index.d.ts",
-      "../src/crud/dao/beer.dao.ts",
       "../src/crud/crud-beer.service.ts",
       "../src/crud/validators/handler-params.ts",
+      "../src/crud/crud-beer.controller.ts",
       "../src/crud/schema/crud-beer.schema.ts",
       "../src/crud/crud-beer.module.ts",
       "../src/app.module.ts",
@@ -11092,7 +11092,7 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/crud/crud-beer.controller.ts"
+      "../src/crud/dao/beer.dao.ts"
     ]
   },
   "version": "3.7.2"

@@ -1,12 +1,8 @@
 import { CreateShopDto } from './create-shop.dto';
-import {IsMongoId, IsNotEmpty, IsOptional, IsString} from 'class-validator';
+import {IsArray, IsMongoId, IsNotEmpty, IsOptional, IsString} from 'class-validator';
 import {ApiModelProperty} from '@nestjs/swagger';
 
 export class CreateBeerDto {
-    @IsMongoId()
-    @IsNotEmpty()
-    id: string;
-
     @ApiModelProperty({ description: 'name', example: 'Guinness' })
     @IsString()
     @IsNotEmpty()
@@ -16,8 +12,8 @@ export class CreateBeerDto {
     @IsString()
     country?: string;
 
-    @ApiModelProperty({ description: 'cereal', example: 'oat, rye, ...' })
-    @IsString()
+    @ApiModelProperty({ description: 'cereal', example: '["oat", "rye", ...]' })
+    @IsArray()
     cereal?: string[]; // min 1, max 10
 
     @ApiModelProperty({ description: 'birth', example: '1955' })

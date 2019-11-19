@@ -97,7 +97,7 @@ export class CrudBeerServiceService {
             .pipe(
                 flatMap(_ => this._beerDao.create(_)),
                 catchError(e =>
-                    e.code = 11000 ?
+                    e.code === 11000 ?
                         throwError(
                             new ConflictException(`Beer with the name '${beer.name}' already exists`),
                         ) :
@@ -138,16 +138,16 @@ export class CrudBeerServiceService {
         return this._beerDao.findByIdAndUpdate(id, beer)
             .pipe(
                 catchError(e =>
-                    e.code = 11000 ?
+                    e.code === 11000 ?
                         throwError(
-                            new ConflictException(`People with name '${beer.name}' already exists`),
+                            new ConflictException(`Beer with name '${beer.name}' already exists`),
                         ) :
                         throwError(new UnprocessableEntityException(e.message)),
                 ),
                 flatMap(_ =>
                     !!_ ?
                         of(new BeerEntity((_))) :
-                        throwError(new NotFoundException(`People with id '${id}' not found`)),
+                        throwError(new NotFoundException(`Beer with id '${id}' not found`)),
                 ),
             );
     }

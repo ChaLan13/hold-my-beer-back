@@ -3,12 +3,6 @@ import {ShopEntity} from '../entities/shop.entity';
 
 export const BeerSchema = new mongoose.Schema({
 
-    id: {
-        type: String,
-        required: true,
-        minlength: 1,
-        trim: true,
-    },
     name: {
         type: String,
         required: true,
@@ -32,7 +26,7 @@ export const BeerSchema = new mongoose.Schema({
     },
     shop: {
         type: Object,
-        required: true,
+        required: false,
     },
 }, {
     toJSON: { virtuals: true },

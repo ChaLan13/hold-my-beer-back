@@ -4,11 +4,6 @@ import {IsMongoId, IsNotEmpty, IsNumber, IsOptional, IsString} from 'class-valid
 
 export class UpdateBeerDto {
 
-    @ApiModelProperty({ description: 'id', example: '3456394026' })
-    @IsMongoId()
-    @IsNotEmpty()
-    id: string;
-
     @ApiModelProperty({ description: 'name', example: 'Guinness' })
     @IsString()
     @IsNotEmpty()
