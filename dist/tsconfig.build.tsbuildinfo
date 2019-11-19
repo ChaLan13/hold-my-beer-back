@@ -1117,13 +1117,9 @@
         "version": "12bb4e8ca399a9b4fe7764da24b857938803b0a1ed007007ab6d1bd24ce5ed88",
         "signature": "ef022c91ea9e75ab4082f2e881f9c4db7b346be2da706e876b253bebce5e6140"
       },
-      "../src/shared/interfaces/beer.ts": {
-        "version": "8e31b8d6262b4c08b5030e082b54949a466d6ff44b576c994786c2a25014d71c",
-        "signature": "f185914bb8e8b7f4368d99e3e8ed152fac25bbe6b4c36a55b7519c42f8a62fc8"
-      },
-      "../src/data_temp/beers.ts": {
-        "version": "8502c1f8359a6258eeb49f3c2a8d223b4aca1cc1eb88113ec9f7d4eac07eaba8",
-        "signature": "ed0a414423ef274a9668da87607e37bce898ed74e7f720cf57a89c4682cb4d97"
+      "../src/shared/interfaces/beer.interface.ts": {
+        "version": "17db8b996b6a12390c295ba46587348c3ed0fa98d55dbb206544492f22705d78",
+        "signature": "c1d2e832c9c2b4813f009eb7153cc8b01547738011eee9dc087dde97179b41a6"
       },
       "../node_modules/rxjs/internal/operators/audit.d.ts": {
         "version": "fe936a68d281ccc2060f8c3de69a0682a807c8fd1b8abccc0a91b83195ca0f94",
@@ -1542,8 +1538,12 @@
         "signature": "c0d4e91100f5d26f2cd5f65939cf0c1653d7566a554f7599b3a532d9c84e7847"
       },
       "../src/crud/interceptor/beer.interceptor.ts": {
-        "version": "64a48db1994ebeb526ff5f84bbb5ef4e2e819dc4482934ff92651ffb930f7ead",
+        "version": "315f1d04f3dfb6ecf43741cbc374eaeb095f8ce7914780d1cc7085f4419731c4",
         "signature": "9aafcd49fc44051fa5ef672206bd383e120eee96f7e08a9753e9cbdf0f56dd3a"
+      },
+      "../src/data_temp/beers.ts": {
+        "version": "483980ec471772eed51e8bfb76dfb85cd0fd56d2be9b7edf2c333571320c6c06",
+        "signature": "ed0a414423ef274a9668da87607e37bce898ed74e7f720cf57a89c4682cb4d97"
       },
       "../node_modules/class-validator/validation/validationerror.d.ts": {
         "version": "8b5ad058f8dab857050fdbb092b9f1267d22641f0f746cd8a7abee85b48bb83a",
@@ -1769,22 +1769,6 @@
         "version": "b1c2c76d74b6707a7f5c4f594fb7f8600cafcb14e873848780d78dda8e2083af",
         "signature": "c4c9e43190fc2ed4629481402a56278c3a3d0876fb5f611fc8a8cc6c783f8a8c"
       },
-      "../src/crud/crud-beer.service.ts": {
-        "version": "2f8acd1efd2d05c36fb7bf4a82542b86b29199fa37d90b9451c331112cfe9c5a",
-        "signature": "2fc7807820e9b30d4b785566a2db405a57990e8b5d0fb6e6e5de6eb55b2c44e9"
-      },
-      "../src/crud/validators/handler-params.ts": {
-        "version": "a79951f1ca0999a4521b64d943f6003446e8b3226c1accb41e642841031ba0cf",
-        "signature": "0608f21bb8712c66fd2c1ee80afe3212b18e15197f4f88096448a5850beb5b24"
-      },
-      "../src/crud/crud-beer.controller.ts": {
-        "version": "6017615f2412dde5ab5101ebb5566f7af1a8bb03fd230e2c1e3612089f2926da",
-        "signature": "d238e9890890975b3b8fa23061f24969c5ff873904fdd80723467875bbf404b1"
-      },
-      "../src/crud/crud-beer.module.ts": {
-        "version": "46f108f8800096f548d13fad92bcbf759ba03e24318378a72cbcac44a60f00a7",
-        "signature": "c82b72aae2b9265d68523509647f713309774c9e1fefeedc43b961a4a3c292d1"
-      },
       "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts": {
         "version": "120fe6ff3f553b3d2a0e065b6fea421698be40a802273652871273338085873c",
         "signature": "120fe6ff3f553b3d2a0e065b6fea421698be40a802273652871273338085873c"
@@ -1816,6 +1800,30 @@
       "../node_modules/@nestjs/mongoose/index.d.ts": {
         "version": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f"
+      },
+      "../src/crud/dao/beer.dao.ts": {
+        "version": "d48cbb98cac43cb8d7d2cfd08e8a5a95b12064e6fcf02f51a60e8e14cf75c75a",
+        "signature": "c95ad976acd6d5311eabc23040a82237dece420b41aa7963a0be23ee5e5f0d5d"
+      },
+      "../src/crud/crud-beer.service.ts": {
+        "version": "a28f02faceafd2e5aaffc40de12f84984ff3995e16c2b715f76266d2a181c160",
+        "signature": "a03b33814198b0310b3c8c1df1edf132c5911f43cffb521eee664943ee8fcef9"
+      },
+      "../src/crud/validators/handler-params.ts": {
+        "version": "a79951f1ca0999a4521b64d943f6003446e8b3226c1accb41e642841031ba0cf",
+        "signature": "0608f21bb8712c66fd2c1ee80afe3212b18e15197f4f88096448a5850beb5b24"
+      },
+      "../src/crud/crud-beer.controller.ts": {
+        "version": "a347fd2a6c3ed2e003045f04e7dfb01bdf66871c098b586bbe4607af3db854e8",
+        "signature": "d238e9890890975b3b8fa23061f24969c5ff873904fdd80723467875bbf404b1"
+      },
+      "../src/crud/schema/crud-beer.schema.ts": {
+        "version": "42c05ac3365c147f2fb99b059039f9b5872c19949db086f948a54734a2e6e622",
+        "signature": "1e6d3a5d5070552f4126e7ef0a244eda3fe2745a7c81229f011f929b1f7c914e"
+      },
+      "../src/crud/crud-beer.module.ts": {
+        "version": "0a6d13fb69ce8c560a9d134df664c4af3321a74ea03b1092bb349caa24f8ca4e",
+        "signature": "c82b72aae2b9265d68523509647f713309774c9e1fefeedc43b961a4a3c292d1"
       },
       "../src/app.module.ts": {
         "version": "b8b312d2faa8a8366aca0d61a6ad33aa075d70a6447af787eb4ea7f8df0dd458",
@@ -1964,10 +1972,6 @@
       "../src/main.ts": {
         "version": "ddfa141c852a43a788f9352c1d60d504e20817208ca7acca766742d6c6cdf682",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
-      },
-      "../src/crud/schema/crud-beer.schema.ts": {
-        "version": "98dbe4e741fcd4c6459a8c5a101f7ca59ca23abd062ac9c4562354404ee0916e",
-        "signature": "1e6d3a5d5070552f4126e7ef0a244eda3fe2745a7c81229f011f929b1f7c914e"
       },
       "../src/interfaces/app-config.interface.ts": {
         "version": "f33de7f48c30ea432e1d4af850314aaefccb86ee6b8eeb95303492a3a5bee1d7",
@@ -4334,14 +4338,8 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/shared/interfaces/beer.ts": [
+      "../src/shared/interfaces/beer.interface.ts": [
         "../node_modules/@types/node/url.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/data_temp/beers.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -5259,6 +5257,12 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../src/data_temp/beers.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../node_modules/class-validator/validation/validationerror.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -5684,53 +5688,6 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/crud/crud-beer.service.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/rxjs/index.d.ts",
-        "../src/shared/interfaces/beer.ts",
-        "../node_modules/rxjs/operators/index.d.ts",
-        "../src/data_temp/beers.ts",
-        "../src/crud/dto/create-beer.dto.ts",
-        "../src/crud/dto/update-beer.dto.ts",
-        "../src/crud/entities/beer.entity.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/crud/validators/handler-params.ts": [
-        "../node_modules/class-validator/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/crud/crud-beer.controller.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/rxjs/index.d.ts",
-        "../src/shared/interfaces/beer.ts",
-        "../src/data_temp/beers.ts",
-        "../src/crud/interceptor/beer.interceptor.ts",
-        "../src/crud/crud-beer.service.ts",
-        "../src/crud/dto/create-beer.dto.ts",
-        "../src/crud/dto/update-beer.dto.ts",
-        "../src/crud/validators/handler-params.ts",
-        "../src/crud/entities/beer.entity.ts",
-        "../node_modules/@nestjs/swagger/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/crud/crud-beer.module.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../src/crud/crud-beer.controller.ts",
-        "../src/crud/crud-beer.service.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
       "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
@@ -5786,6 +5743,74 @@
       ],
       "../node_modules/@nestjs/mongoose/index.d.ts": [
         "../node_modules/@nestjs/mongoose/dist/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/crud/dao/beer.dao.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../node_modules/rxjs/index.d.ts",
+        "../node_modules/rxjs/operators/index.d.ts",
+        "../src/shared/interfaces/beer.interface.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/crud/crud-beer.service.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/rxjs/index.d.ts",
+        "../src/shared/interfaces/beer.interface.ts",
+        "../node_modules/rxjs/operators/index.d.ts",
+        "../src/data_temp/beers.ts",
+        "../src/crud/dto/create-beer.dto.ts",
+        "../src/crud/dto/update-beer.dto.ts",
+        "../src/crud/entities/beer.entity.ts",
+        "../src/crud/dao/beer.dao.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/crud/validators/handler-params.ts": [
+        "../node_modules/class-validator/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/crud/crud-beer.controller.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/rxjs/index.d.ts",
+        "../src/shared/interfaces/beer.interface.ts",
+        "../src/crud/interceptor/beer.interceptor.ts",
+        "../src/crud/crud-beer.service.ts",
+        "../src/crud/dto/create-beer.dto.ts",
+        "../src/crud/dto/update-beer.dto.ts",
+        "../src/crud/validators/handler-params.ts",
+        "../src/crud/entities/beer.entity.ts",
+        "../node_modules/@nestjs/swagger/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/crud/schema/crud-beer.schema.ts": [
+        "../src/crud/entities/shop.entity.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/crud/crud-beer.module.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../src/crud/crud-beer.controller.ts",
+        "../src/crud/crud-beer.service.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
+        "../src/crud/schema/crud-beer.schema.ts",
+        "../src/crud/dao/beer.dao.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -6119,13 +6144,6 @@
         "../node_modules/@nestjs/swagger/index.d.ts",
         "../src/crud/crud-beer.module.ts",
         "../src/interfaces/swagger-config.interface.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../src/crud/schema/crud-beer.schema.ts": [
-        "../src/crud/entities/shop.entity.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -9886,7 +9904,72 @@
       "../src/crud/entities/beer.entity.ts": [
         "../src/crud/entities/shop.entity.ts"
       ],
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts": [
+        "../node_modules/rxjs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/common/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/common/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/crud/dao/beer.dao.ts": [
+        "../src/shared/interfaces/beer.interface.ts",
+        "../node_modules/rxjs/index.d.ts"
+      ],
       "../src/crud/crud-beer.service.ts": [
+        "../src/crud/dao/beer.dao.ts",
         "../node_modules/rxjs/index.d.ts",
         "../src/crud/entities/beer.entity.ts",
         "../src/crud/dto/create-beer.dto.ts",
@@ -10472,66 +10555,6 @@
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/mongoose/dist/common/index.d.ts": [
-        "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts",
-        "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/mongoose/dist/index.d.ts": [
-        "../node_modules/@nestjs/mongoose/dist/common/index.d.ts",
-        "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts",
-        "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/mongoose/index.d.ts": [
-        "../node_modules/@nestjs/mongoose/dist/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts": [
-        "../node_modules/rxjs/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@nestjs/common/interfaces/index.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts": [
-        "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts": [
-        "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
       ]
     },
     "semanticDiagnosticsPerFile": [
@@ -10814,8 +10837,7 @@
       "../node_modules/@nestjs/common/index.d.ts",
       "../src/app.service.ts",
       "../src/app.controller.ts",
-      "../src/shared/interfaces/beer.ts",
-      "../src/data_temp/beers.ts",
+      "../src/shared/interfaces/beer.interface.ts",
       "../node_modules/rxjs/internal/operators/audit.d.ts",
       "../node_modules/rxjs/internal/operators/audittime.d.ts",
       "../node_modules/rxjs/internal/operators/buffer.d.ts",
@@ -10921,6 +10943,7 @@
       "../node_modules/rxjs/operators/index.d.ts",
       "../node_modules/fastify/fastify.d.ts",
       "../src/crud/interceptor/beer.interceptor.ts",
+      "../src/data_temp/beers.ts",
       "../node_modules/class-validator/validation/validationerror.d.ts",
       "../node_modules/class-validator/validation/validatoroptions.d.ts",
       "../node_modules/class-validator/validation-schema/validationschema.d.ts",
@@ -10966,6 +10989,8 @@
       "../node_modules/@nestjs/swagger/dist/index.d.ts",
       "../node_modules/@nestjs/swagger/index.d.ts",
       "../src/crud/dto/create-shop.dto.ts",
+      "../src/crud/dto/create-beer.dto.ts",
+      "../src/crud/dto/update-beer.dto.ts",
       "../node_modules/class-transformer/classtransformoptions.d.ts",
       "../node_modules/class-transformer/classtransformer.d.ts",
       "../node_modules/class-transformer/metadata/exposeexcludeoptions.d.ts",
@@ -10975,10 +11000,20 @@
       "../node_modules/class-transformer/index.d.ts",
       "../src/crud/entities/shop.entity.ts",
       "../src/crud/entities/beer.entity.ts",
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts",
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts",
+      "../node_modules/@nestjs/mongoose/dist/common/index.d.ts",
+      "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
+      "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts",
+      "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts",
+      "../node_modules/@nestjs/mongoose/dist/index.d.ts",
+      "../node_modules/@nestjs/mongoose/index.d.ts",
+      "../src/crud/dao/beer.dao.ts",
       "../src/crud/crud-beer.service.ts",
       "../src/crud/validators/handler-params.ts",
       "../src/crud/crud-beer.controller.ts",
       "../src/crud/crud-beer.module.ts",
+      "../src/app.module.ts",
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts",
       "../node_modules/@nestjs/core/adapters/index.d.ts",
       "../node_modules/@nestjs/core/constants.d.ts",
@@ -11014,6 +11049,7 @@
       "../node_modules/@nestjs/platform-fastify/interfaces/index.d.ts",
       "../node_modules/@nestjs/platform-fastify/index.d.ts",
       "../src/interfaces/swagger-config.interface.ts",
+      "../src/main.ts",
       "../src/interfaces/app-config.interface.ts",
       "../node_modules/@types/anymatch/index.d.ts",
       "../node_modules/@babel/types/lib/index.d.ts",
@@ -11052,19 +11088,7 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/crud/dto/create-beer.dto.ts",
-      "../src/crud/dto/update-beer.dto.ts",
-      "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts",
-      "../node_modules/@nestjs/mongoose/dist/common/index.d.ts",
-      "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts",
-      "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
-      "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts",
-      "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts",
-      "../src/crud/schema/crud-beer.schema.ts",
-      "../node_modules/@nestjs/mongoose/dist/index.d.ts",
-      "../node_modules/@nestjs/mongoose/index.d.ts",
-      "../src/app.module.ts",
-      "../src/main.ts"
+      "../src/crud/schema/crud-beer.schema.ts"
     ]
   },
   "version": "3.7.2"

@@ -12,7 +12,7 @@ export class BeerDao {
      *
      * @param {Model<BeerInterface>} _beerModel instance of the model representing a Beer
      */
-    constructor(@InjectModel('Person') private readonly _personModel: Model<BeerInterface>) {
+    constructor(@InjectModel('Beer') private readonly _beerModel: Model<BeerInterface>) {
     }
 
     /**
@@ -21,7 +21,7 @@ export class BeerDao {
      * @return {Observable<BeerInterface[] | void>}
      */
     find(): Observable<BeerInterface[] | void> {
-        return from(this._personModel.find({}))
+        return from(this._beerModel.find({}))
             .pipe(
                 map((docs: MongooseDocument[]) => (!!docs && docs.length > 0) ? docs.map(_ => _.toJSON()) : undefined),
             );

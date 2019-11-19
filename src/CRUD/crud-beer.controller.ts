@@ -1,7 +1,6 @@
 import {Body, ClassSerializerInterceptor, Controller, Delete, Get, Param, Post, Put, UseInterceptors} from '@nestjs/common';
 import { Observable, of} from 'rxjs';
 import { BeerInterface } from '../shared/interfaces/beer.interface';
-import { BEERS } from '../data_temp/beers';
 import {BeerInterceptor} from './interceptor/beer.interceptor';
 import {CrudBeerServiceService} from './crud-beer.service';
 import {CreateBeerDto} from './dto/create-beer.dto';
@@ -18,7 +17,7 @@ import {
     ApiUseTags
 } from '@nestjs/swagger';
 
-@ApiUseTags('people')
+@ApiUseTags('beer')
 @Controller('crud-beer')
 @UseInterceptors(ClassSerializerInterceptor)
 @UseInterceptors(BeerInterceptor)
@@ -50,7 +49,7 @@ export class CrudBeerController {
      */
     @ApiOkResponse({ description: 'Returns an array of beer', type: BeerEntity, isArray: true })
     @ApiNoContentResponse({ description: 'No beer exists in database' })
-    @Get()
+    @Get('findAll')
     findAll(): Observable<BeerEntity[] | void> {
         return this._beerService.findAll();
     }
@@ -113,7 +112,7 @@ export class CrudBeerController {
     @ApiNotFoundResponse({ description: 'BeerInterface with the given "id" doesn\'t exist in the database' })
     @ApiBadRequestResponse({ description: 'Parameter and/or payload provided are not good' })
     @ApiImplicitParam({ name: 'id', description: 'Unique identifier of the beer in the database', type: String })
-    @ApiImplicitBody({ name: 'UpdateBeerDto', description: 'Payload to update a person', type: UpdateBeerDto })
+    @ApiImplicitBody({ name: 'UpdateBeerDto', description: 'Payload to update a beer', type: UpdateBeerDto })
     @Put(':id')
     update(@Param() params: HandlerParams, @Body() updateBeerDto: UpdateBeerDto): Observable<BeerEntity> {
         return this._beerService.update(params.id, updateBeerDto);

@@ -10,7 +10,7 @@ import {BeerDao} from './dao/beer.dao';
 
 @Injectable()
 export class CrudBeerServiceService {
-    // private property to store all people
+    // private property to store all beers
     private _beer: BeerInterface[];
 
     /**
@@ -84,13 +84,13 @@ export class CrudBeerServiceService {
                 flatMap(_ =>
                     !!_ ?
                         of(new BeerEntity(_)) :
-                        throwError(new NotFoundException(`People with id '${id}' not found`)),
+                        throwError(new NotFoundException(`Beer with id '${id}' not found`)),
                 ),
             );
     }
 
     /**
-     * Check if beer already exists and add it in people list
+     * Check if beer already exists and add it in beers list
      *
      * @param beer to create
      *
@@ -149,9 +149,9 @@ export class CrudBeerServiceService {
     }
 
     /**
-     * Deletes one person in people list
+     * Deletes one beer in beer list
      *
-     * @param {string} id of the person to delete
+     * @param {string} id of the beer to delete
      *
      * @returns {Observable<void>}
      */
