@@ -1802,19 +1802,19 @@
         "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f"
       },
       "../src/crud/dao/beer.dao.ts": {
-        "version": "d48cbb98cac43cb8d7d2cfd08e8a5a95b12064e6fcf02f51a60e8e14cf75c75a",
-        "signature": "c95ad976acd6d5311eabc23040a82237dece420b41aa7963a0be23ee5e5f0d5d"
+        "version": "9049d0aa066a10df7245c56e515c03f01b8bfc7a60967298fe18e1a33697f515",
+        "signature": "2dce5fa3a9603828c4ab242050a7d8cf50c3c668b35b4b82e67e7282619ee535"
       },
       "../src/crud/crud-beer.service.ts": {
-        "version": "a28f02faceafd2e5aaffc40de12f84984ff3995e16c2b715f76266d2a181c160",
-        "signature": "a03b33814198b0310b3c8c1df1edf132c5911f43cffb521eee664943ee8fcef9"
+        "version": "5bde8cd94ece4009bf6ee424855023d4963e9fcccd5cf298355a90b42e5f3bed",
+        "signature": "31ed07728d135c63c064a5d92794bbcdf91ef3f829ac3a43a34a7ca43c4d07c9"
       },
       "../src/crud/validators/handler-params.ts": {
         "version": "a79951f1ca0999a4521b64d943f6003446e8b3226c1accb41e642841031ba0cf",
         "signature": "0608f21bb8712c66fd2c1ee80afe3212b18e15197f4f88096448a5850beb5b24"
       },
       "../src/crud/crud-beer.controller.ts": {
-        "version": "a347fd2a6c3ed2e003045f04e7dfb01bdf66871c098b586bbe4607af3db854e8",
+        "version": "8eb4ac5071b20d1d09a4707fe16c7c926b9ae1b74dc21080add1c84cf311b455",
         "signature": "d238e9890890975b3b8fa23061f24969c5ff873904fdd80723467875bbf404b1"
       },
       "../src/crud/schema/crud-beer.schema.ts": {
@@ -5754,6 +5754,8 @@
         "../node_modules/rxjs/index.d.ts",
         "../node_modules/rxjs/operators/index.d.ts",
         "../src/shared/interfaces/beer.interface.ts",
+        "../src/crud/dto/create-beer.dto.ts",
+        "../src/crud/dto/update-beer.dto.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -9966,7 +9968,9 @@
       ],
       "../src/crud/dao/beer.dao.ts": [
         "../src/shared/interfaces/beer.interface.ts",
-        "../node_modules/rxjs/index.d.ts"
+        "../node_modules/rxjs/index.d.ts",
+        "../src/crud/dto/create-beer.dto.ts",
+        "../src/crud/dto/update-beer.dto.ts"
       ],
       "../src/crud/crud-beer.service.ts": [
         "../src/crud/dao/beer.dao.ts",
@@ -11011,7 +11015,7 @@
       "../src/crud/dao/beer.dao.ts",
       "../src/crud/crud-beer.service.ts",
       "../src/crud/validators/handler-params.ts",
-      "../src/crud/crud-beer.controller.ts",
+      "../src/crud/schema/crud-beer.schema.ts",
       "../src/crud/crud-beer.module.ts",
       "../src/app.module.ts",
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts",
@@ -11088,7 +11092,7 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/crud/schema/crud-beer.schema.ts"
+      "../src/crud/crud-beer.controller.ts"
     ]
   },
   "version": "3.7.2"

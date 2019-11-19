@@ -1,7 +1,7 @@
-import {ConflictException, Injectable, NotFoundException} from '@nestjs/common';
+import {ConflictException, Injectable, NotFoundException, UnprocessableEntityException} from '@nestjs/common';
 import {from, Observable, of, throwError} from 'rxjs';
 import {BeerInterface} from '../shared/interfaces/beer.interface';
-import {find, findIndex, flatMap, map, tap} from 'rxjs/operators';
+import {catchError, find, findIndex, flatMap, map, tap} from 'rxjs/operators';
 import { BEERS } from '../data_temp/beers';
 import {CreateBeerDto} from './dto/create-beer.dto';
 import {UpdateBeerDto} from './dto/update-beer.dto';
@@ -10,8 +10,6 @@ import {BeerDao} from './dao/beer.dao';
 
 @Injectable()
 export class CrudBeerServiceService {
-    // private property to store all beers
-    private _beer: BeerInterface[];
 
     /**
      * Class constructor
@@ -19,9 +17,6 @@ export class CrudBeerServiceService {
      * @param {BeerDao} _beerDao instance of the DAO
      */
     constructor(private readonly _beerDao: BeerDao) {
-        this._beer = [].concat(BEERS).map(beer => Object.assign(beer, {
-            birthYear: this._parseDate(beer.birthYear),
-        }));
     }
 
     /**
@@ -64,8 +59,9 @@ export class CrudBeerServiceService {
      * @returns {Observable<BeerEntity | void>}
      */
     findRandom(): Observable<BeerEntity | void> {
-        return of(this._beer[ Math.round(Math.random() * this._beer.length) ])
+        return this._beerDao.find()
             .pipe(
+                map(_ => !!_ ? _[ Math.round(Math.random() * _.length) ] : undefined),
                 map(_ => !!_ ? new BeerEntity(_) : undefined),
             );
     }
@@ -78,9 +74,9 @@ export class CrudBeerServiceService {
      * @returns {Observable<BeerEntity>}
      */
     findOne(id: string): Observable<BeerEntity> {
-        return from(this._beer)
+        return this._beerDao.findById(id)
             .pipe(
-                find(_ => _.id === id),
+                catchError(e => throwError(new UnprocessableEntityException(e.message))),
                 flatMap(_ =>
                     !!_ ?
                         of(new BeerEntity(_)) :
@@ -97,16 +93,17 @@ export class CrudBeerServiceService {
      * @returns {Observable<BeerInterface>}
      */
     create(beer: CreateBeerDto): Observable<BeerEntity> {
-        return from(this._beer)
+        return this._addBeer(beer)
             .pipe(
-                find(_ => _.name.toLowerCase() === beer.name.toLowerCase() ),
-                flatMap(_ =>
-                    !!_ ?
+                flatMap(_ => this._beerDao.create(_)),
+                catchError(e =>
+                    e.code = 11000 ?
                         throwError(
                             new ConflictException(`Beer with the name '${beer.name}' already exists`),
                         ) :
-                        this._addBeer(beer),
+                        throwError(new UnprocessableEntityException(e.message)),
                 ),
+                map(_ => new BeerEntity(_)),
             );
     }
 
@@ -115,20 +112,17 @@ export class CrudBeerServiceService {
      *
      * @param beer to add
      *
-     * @returns {Observable<BeerEntity>}
+     * @returns {Observable<CreateBeerDto>}
      *
      * @private
      */
-    private _addBeer(beer: CreateBeerDto): Observable<BeerEntity> {
+    private _addBeer(beer: CreateBeerDto): Observable<CreateBeerDto> {
         return of(beer)
             .pipe(
                 map(_ =>
                     Object.assign(_, {
-                        id: this._createId(),
-                    }) as BeerInterface,
+                    }) ,
                 ),
-                tap(_ => this._beer = this._beer.concat(_)),
-                map(_ => new BeerEntity(_)),
             );
     }
 
@@ -141,10 +135,20 @@ export class CrudBeerServiceService {
      * @returns {Observable<BeerEntity>}
      */
     update(id: string, beer: UpdateBeerDto): Observable<BeerEntity> {
-        return this._findBeerIndexOfList(id)
+        return this._beerDao.findByIdAndUpdate(id, beer)
             .pipe(
-                tap(_ => Object.assign(this._beer[ _ ], beer)),
-                map(_ => new BeerEntity(this._beer[ _ ])),
+                catchError(e =>
+                    e.code = 11000 ?
+                        throwError(
+                            new ConflictException(`People with name '${beer.name}' already exists`),
+                        ) :
+                        throwError(new UnprocessableEntityException(e.message)),
+                ),
+                flatMap(_ =>
+                    !!_ ?
+                        of(new BeerEntity((_))) :
+                        throwError(new NotFoundException(`People with id '${id}' not found`)),
+                ),
             );
     }
 
@@ -156,41 +160,14 @@ export class CrudBeerServiceService {
      * @returns {Observable<void>}
      */
     delete(id: string): Observable<void> {
-        return this._findBeerIndexOfList(id)
+        return this._beerDao.findByIdAndRemove(id)
             .pipe(
-                tap(_ => this._beer.splice(_, 1)),
-                map(() => undefined),
-            );
-    }
-
-    /**
-     * Finds index of array for current beer
-     *
-     * @param {string} id of the beer to find
-     *
-     * @returns {Observable<number>}
-     *
-     * @private
-     */
-    private _findBeerIndexOfList(id: string): Observable<number> {
-        return from(this._beer)
-            .pipe(
-                findIndex(_ => _.id === id),
-                flatMap(_ => _ > -1 ?
-                    of(_) :
-                    throwError(new NotFoundException(`Beer with id '${id}' not found`)),
+                catchError(e => throwError(new NotFoundException(e.message))),
+                flatMap(_ =>
+                    !!_ ?
+                        of(undefined) :
+                        throwError(new NotFoundException(`Beer with id '${id}' not found`)),
                 ),
             );
-    }
-
-    /**
-     * Creates a new id
-     *
-     * @returns {string}
-     *
-     * @private
-     */
-    private _createId(): string {
-        return `${new Date().getTime()}`;
     }
 }

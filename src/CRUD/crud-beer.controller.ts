@@ -13,7 +13,7 @@ import {
     ApiImplicitParam,
     ApiNoContentResponse,
     ApiNotFoundResponse,
-    ApiOkResponse,
+    ApiOkResponse, ApiUnprocessableEntityResponse,
     ApiUseTags
 } from '@nestjs/swagger';
 
@@ -78,8 +78,9 @@ export class CrudBeerController {
     @ApiOkResponse({ description: 'Returns the beer for the given "id"', type: BeerEntity })
     @ApiNotFoundResponse({ description: 'BeerInterface with the given "id" doesn\'t exist in the database' })
     @ApiBadRequestResponse({ description: 'Parameter provided is not good' })
+    @ApiUnprocessableEntityResponse({ description: 'The request can\'t be performed in the database' })
     @ApiImplicitParam({ name: 'id', description: 'Unique identifier of the beer in the database', type: String })
-    @Get(':id')
+    @Get('lookup' + ':id')
     findOne(@Param() params: HandlerParams): Observable<BeerEntity> {
         return this._beerService.findOne(params.id);
     }
@@ -94,8 +95,9 @@ export class CrudBeerController {
     @ApiCreatedResponse({ description: 'The beer has been successfully created', type: BeerEntity })
     @ApiConflictResponse({ description: 'The beer already exists in the database' })
     @ApiBadRequestResponse({ description: 'Payload provided is not good' })
+    @ApiUnprocessableEntityResponse({ description: 'The request can\'t be performed in the database' })
     @ApiImplicitBody({ name: 'CreateBeerDto', description: 'Payload to create a new beer', type: CreateBeerDto })
-    @Post()
+    @Post('create')
     create(@Body() createBeerDto: CreateBeerDto): Observable<BeerEntity> {
         return this._beerService.create(createBeerDto);
     }
@@ -111,9 +113,10 @@ export class CrudBeerController {
     @ApiOkResponse({ description: 'The beer has been successfully updated', type: BeerEntity })
     @ApiNotFoundResponse({ description: 'BeerInterface with the given "id" doesn\'t exist in the database' })
     @ApiBadRequestResponse({ description: 'Parameter and/or payload provided are not good' })
+    @ApiUnprocessableEntityResponse({ description: 'The request can\'t be performed in the database' })
     @ApiImplicitParam({ name: 'id', description: 'Unique identifier of the beer in the database', type: String })
     @ApiImplicitBody({ name: 'UpdateBeerDto', description: 'Payload to update a beer', type: UpdateBeerDto })
-    @Put(':id')
+    @Put('update' + ':id')
     update(@Param() params: HandlerParams, @Body() updateBeerDto: UpdateBeerDto): Observable<BeerEntity> {
         return this._beerService.update(params.id, updateBeerDto);
     }
@@ -128,8 +131,9 @@ export class CrudBeerController {
     @ApiNoContentResponse({ description: 'The beer has been successfully deleted' })
     @ApiNotFoundResponse({ description: 'BeerInterface with the given "id" doesn\'t exist in the database' })
     @ApiBadRequestResponse({ description: 'Parameter provided is not good' })
+    @ApiUnprocessableEntityResponse({ description: 'The request can\'t be performed in the database' })
     @ApiImplicitParam({ name: 'id', description: 'Unique identifier of the beer in the database', type: String })
-    @Delete(':id')
+    @Delete('delete' + ':id')
     delete(@Param() params: HandlerParams): Observable<void> {
         return this._beerService.delete(params.id);
     }
