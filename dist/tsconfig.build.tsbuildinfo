@@ -1730,7 +1730,7 @@
         "signature": "fdbf4b0e1db8db8605b955f1bad621da0af8b7dd4841e71450e487ddafd70bef"
       },
       "../src/crud/dto/update-beer.dto.ts": {
-        "version": "a9cd210721af4b5910ddba4cd1b533f066821624b5b990c797695a0f44ebf40a",
+        "version": "29956f200388c45f59e8d413f7aa028dbd9f2f2db536edf4b07b072704b65f60",
         "signature": "694f5a55d7c6e54ff9be665daae36113094c5cd9788e5d6b3e1382d280a4fbd8"
       },
       "../node_modules/class-transformer/classtransformoptions.d.ts": {
@@ -1970,7 +1970,7 @@
         "signature": "211f1e624b0e7d0c6bb9f4b32212757f69617657b5a8ba5a08ae3829d8ceb097"
       },
       "../src/main.ts": {
-        "version": "ddfa141c852a43a788f9352c1d60d504e20817208ca7acca766742d6c6cdf682",
+        "version": "c1967e9ae52804fc7471780dd9af3185272627825084ad525321a651d99aab84",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
       },
       "../src/interfaces/app-config.interface.ts": {
