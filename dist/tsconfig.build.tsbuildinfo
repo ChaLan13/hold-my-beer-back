@@ -1726,11 +1726,11 @@
         "signature": "bd254d1215ddc41aef86c8af0b3502fa99b07230273328bd235325da36caf8fa"
       },
       "../src/crud/dto/create-beer.dto.ts": {
-        "version": "e300c9e8074ce2420ce7b1f21c94a2f9c94c79f57d66b638f92c2ce3a48a0163",
+        "version": "d5b1193d060d5d3335ed456fd36a4d0b88049ec7609efa3b3b2ea162eae17830",
         "signature": "0c847f995f263d1424f45f62473a0ae3880976e0c1c063ef8d999426d38a3345"
       },
       "../src/crud/dto/update-beer.dto.ts": {
-        "version": "6f0c65869d72fca8b5d9a9564fb0713b076a35cf9ca25d06d79a4ebc26cb5b05",
+        "version": "f1897604ce369e244009e34f423715d3629df61293767340bc6d06837c773923",
         "signature": "f3516ba850a6ce839b990af72ccffcd576e1e8e3c3254b5e864038339aa1a257"
       },
       "../node_modules/class-transformer/classtransformoptions.d.ts": {
@@ -1785,8 +1785,40 @@
         "version": "46f108f8800096f548d13fad92bcbf759ba03e24318378a72cbcac44a60f00a7",
         "signature": "c82b72aae2b9265d68523509647f713309774c9e1fefeedc43b961a4a3c292d1"
       },
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts": {
+        "version": "120fe6ff3f553b3d2a0e065b6fea421698be40a802273652871273338085873c",
+        "signature": "120fe6ff3f553b3d2a0e065b6fea421698be40a802273652871273338085873c"
+      },
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts": {
+        "version": "94f798f2ee81af6b0767403ef94fbc6d7d7a5e2dc0953a2ea3de98f2cab587c2",
+        "signature": "94f798f2ee81af6b0767403ef94fbc6d7d7a5e2dc0953a2ea3de98f2cab587c2"
+      },
+      "../node_modules/@nestjs/mongoose/dist/common/index.d.ts": {
+        "version": "23dbd21c1fe8ee7c2e1b260de8610d1ce67a785cd40d349520306c8d876385c4",
+        "signature": "23dbd21c1fe8ee7c2e1b260de8610d1ce67a785cd40d349520306c8d876385c4"
+      },
+      "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts": {
+        "version": "bea1e44197be52c026ebffdc129afc6cac229b9ec6a86ab3ebdc07bec77ebe23",
+        "signature": "bea1e44197be52c026ebffdc129afc6cac229b9ec6a86ab3ebdc07bec77ebe23"
+      },
+      "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts": {
+        "version": "69c9dd7f908cc12704299ad7ab4b667692800279d4df885ec9793f0317234b57",
+        "signature": "69c9dd7f908cc12704299ad7ab4b667692800279d4df885ec9793f0317234b57"
+      },
+      "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts": {
+        "version": "729bc6ae2f8b0a4f973660582b6fca33247e82733ea44162dfc98cfae6f81059",
+        "signature": "729bc6ae2f8b0a4f973660582b6fca33247e82733ea44162dfc98cfae6f81059"
+      },
+      "../node_modules/@nestjs/mongoose/dist/index.d.ts": {
+        "version": "1566c3bf94fd979425350fd0d2dd2e814c9399c7217f58186467c548f7711e58",
+        "signature": "1566c3bf94fd979425350fd0d2dd2e814c9399c7217f58186467c548f7711e58"
+      },
+      "../node_modules/@nestjs/mongoose/index.d.ts": {
+        "version": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f",
+        "signature": "8f1241f5d9f0d3d72117768b3c974e462840fbd85026fb66685078945404cf2f"
+      },
       "../src/app.module.ts": {
-        "version": "bf0630f35354b448a2c382f0d5bf6cdd0546407ba1ec277cd9820bf3a55967aa",
+        "version": "b8b312d2faa8a8366aca0d61a6ad33aa075d70a6447af787eb4ea7f8df0dd458",
         "signature": "b82491e2990291580288c5602d4c017238977749d52b17391f0e45d9a29be644"
       },
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts": {
@@ -1932,6 +1964,10 @@
       "../src/main.ts": {
         "version": "ddfa141c852a43a788f9352c1d60d504e20817208ca7acca766742d6c6cdf682",
         "signature": "8e609bb71c20b858c77f0e9f90bb1319db8477b13f9f965f1a1e18524bf50881"
+      },
+      "../src/crud/schema/crud-beer.schema.ts": {
+        "version": "98dbe4e741fcd4c6459a8c5a101f7ca59ca23abd062ac9c4562354404ee0916e",
+        "signature": "1e6d3a5d5070552f4126e7ef0a244eda3fe2745a7c81229f011f929b1f7c914e"
       },
       "../src/interfaces/app-config.interface.ts": {
         "version": "f33de7f48c30ea432e1d4af850314aaefccb86ee6b8eeb95303492a3a5bee1d7",
@@ -5695,11 +5731,72 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts": [
+        "../node_modules/rxjs/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/common/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/common/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/dist/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/mongoose/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/app.module.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
         "../src/app.controller.ts",
         "../src/app.service.ts",
         "../src/crud/crud-beer.module.ts",
+        "../node_modules/@nestjs/mongoose/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -6022,6 +6119,13 @@
         "../node_modules/@nestjs/swagger/index.d.ts",
         "../src/crud/crud-beer.module.ts",
         "../src/interfaces/swagger-config.interface.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/crud/schema/crud-beer.schema.ts": [
+        "../src/crud/entities/shop.entity.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -9532,11 +9636,255 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-operation.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-response.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-produces.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-consumes.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-bearer.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-body.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-header.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-enum.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-enum.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-param.decorator.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-query.decorator.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-model-property.decorator.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-use-tags.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-oauth2.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-exclude-endpoint.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-file.decorator.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/decorators/index.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/decorators/api-operation.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-response.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-produces.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-consumes.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-bearer.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-body.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-header.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-param.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-query.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-model-property.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-use-tags.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-oauth2.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-exclude-endpoint.decorator.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-file.decorator.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-base-config.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/document-builder.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-base-config.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-custom-options.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document-options.interface.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document.interface.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-base-config.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/interfaces/index.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-base-config.interface.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-custom-options.interface.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document-options.interface.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document.interface.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/swagger-module.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/dist/index.d.ts": [
+        "../node_modules/reflect-metadata/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/decorators/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/document-builder.d.ts",
+        "../node_modules/@nestjs/swagger/dist/interfaces/index.d.ts",
+        "../node_modules/@nestjs/swagger/dist/swagger-module.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/@nestjs/swagger/index.d.ts": [
+        "../node_modules/@nestjs/swagger/dist/index.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
       "../src/crud/dto/create-beer.dto.ts": [
         "../src/crud/dto/create-shop.dto.ts"
       ],
       "../src/crud/dto/update-beer.dto.ts": [
         "../src/crud/dto/create-shop.dto.ts"
+      ],
+      "../node_modules/class-transformer/classtransformoptions.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/classtransformer.d.ts": [
+        "../node_modules/class-transformer/classtransformoptions.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/metadata/exposeexcludeoptions.d.ts": [
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/metadata/typemetadata.d.ts": [
+        "../node_modules/class-transformer/metadata/exposeexcludeoptions.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/transformoperationexecutor.d.ts": [
+        "../node_modules/class-transformer/classtransformoptions.d.ts",
+        "../node_modules/class-transformer/metadata/typemetadata.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/decorators.d.ts": [
+        "../node_modules/class-transformer/metadata/exposeexcludeoptions.d.ts",
+        "../node_modules/class-transformer/classtransformoptions.d.ts",
+        "../node_modules/class-transformer/transformoperationexecutor.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../node_modules/class-transformer/index.d.ts": [
+        "../node_modules/class-transformer/classtransformer.d.ts",
+        "../node_modules/class-transformer/classtransformoptions.d.ts",
+        "../node_modules/class-transformer/metadata/exposeexcludeoptions.d.ts",
+        "../node_modules/class-transformer/decorators.d.ts",
+        "../node_modules/@types/node/fs.d.ts",
+        "../node_modules/@types/node/ts3.2/fs.d.ts",
+        "../node_modules/@types/node/util.d.ts",
+        "../node_modules/@types/node/ts3.2/util.d.ts"
+      ],
+      "../src/crud/entities/beer.entity.ts": [
+        "../src/crud/entities/shop.entity.ts"
       ],
       "../src/crud/crud-beer.service.ts": [
         "../node_modules/rxjs/index.d.ts",
@@ -10125,245 +10473,61 @@
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@nestjs/swagger/dist/decorators/api-operation.decorator.d.ts": [
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts": [
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@nestjs/swagger/dist/decorators/index.d.ts": [
-        "../node_modules/@nestjs/swagger/dist/decorators/api-operation.decorator.d.ts",
-        "../node_modules/@nestjs/swagger/dist/decorators/api-response.decorator.d.ts",
-        "../node_modules/@nestjs/swagger/dist/decorators/api-produces.decorator.d.ts",
-        "../node_modules/@nestjs/swagger/dist/decorators/api-consumes.decorator.d.ts",
-        "../node_modules/@nestjs/swagger/dist/decorators/api-bearer.decorator.d.ts",
-        "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-body.decorator.d.ts",
-        "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-header.decorator.d.ts",
-        "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-param.decorator.d.ts",
-        "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-query.decorator.d.ts",
-        "../node_modules/@nestjs/swagger/dist/decorators/api-model-property.decorator.d.ts",
-        "../node_modules/@nestjs/swagger/dist/decorators/api-use-tags.decorator.d.ts",
-        "../node_modules/@nestjs/swagger/dist/decorators/api-oauth2.decorator.d.ts",
-        "../node_modules/@nestjs/swagger/dist/decorators/api-exclude-endpoint.decorator.d.ts",
-        "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-file.decorator.d.ts",
+      "../node_modules/@nestjs/mongoose/dist/common/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@nestjs/swagger/dist/index.d.ts": [
-        "../node_modules/reflect-metadata/index.d.ts",
-        "../node_modules/@nestjs/swagger/dist/decorators/index.d.ts",
-        "../node_modules/@nestjs/swagger/dist/document-builder.d.ts",
-        "../node_modules/@nestjs/swagger/dist/interfaces/index.d.ts",
-        "../node_modules/@nestjs/swagger/dist/swagger-module.d.ts",
+      "../node_modules/@nestjs/mongoose/dist/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@nestjs/swagger/index.d.ts": [
-        "../node_modules/@nestjs/swagger/dist/index.d.ts",
+      "../node_modules/@nestjs/mongoose/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../src/crud/entities/beer.entity.ts": [
-        "../src/crud/entities/shop.entity.ts"
-      ],
-      "../node_modules/@nestjs/swagger/dist/decorators/api-response.decorator.d.ts": [
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts": [
+        "../node_modules/rxjs/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@nestjs/swagger/dist/decorators/api-produces.decorator.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/swagger/dist/decorators/api-consumes.decorator.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/swagger/dist/decorators/api-bearer.decorator.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-body.decorator.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-header.decorator.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-enum.interface.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts": [
-        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-enum.interface.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/swagger/dist/decorators/api-model-property.decorator.d.ts": [
-        "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-query.decorator.d.ts": [
-        "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-param.decorator.d.ts": [
-        "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/swagger/dist/decorators/api-use-tags.decorator.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/swagger/dist/decorators/api-oauth2.decorator.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/swagger/dist/decorators/api-exclude-endpoint.decorator.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-file.decorator.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-base-config.interface.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/swagger/dist/interfaces/index.d.ts": [
-        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-base-config.interface.d.ts",
-        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-custom-options.interface.d.ts",
-        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document-options.interface.d.ts",
-        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document.interface.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/swagger/dist/swagger-module.d.ts": [
+      "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts": [
         "../node_modules/@nestjs/common/index.d.ts",
-        "../node_modules/@nestjs/swagger/dist/interfaces/index.d.ts",
+        "../node_modules/@nestjs/common/interfaces/index.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document.interface.d.ts": [
-        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-base-config.interface.d.ts",
+      "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts": [
+        "../node_modules/@nestjs/common/index.d.ts",
+        "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
         "../node_modules/@types/node/ts3.2/util.d.ts"
       ],
-      "../node_modules/@nestjs/swagger/dist/document-builder.d.ts": [
-        "../node_modules/@nestjs/swagger/dist/interfaces/swagger-base-config.interface.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-custom-options.interface.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document-options.interface.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/class-transformer/classtransformoptions.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/class-transformer/index.d.ts": [
-        "../node_modules/class-transformer/classtransformer.d.ts",
-        "../node_modules/class-transformer/classtransformoptions.d.ts",
-        "../node_modules/class-transformer/metadata/exposeexcludeoptions.d.ts",
-        "../node_modules/class-transformer/decorators.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/class-transformer/decorators.d.ts": [
-        "../node_modules/class-transformer/metadata/exposeexcludeoptions.d.ts",
-        "../node_modules/class-transformer/classtransformoptions.d.ts",
-        "../node_modules/class-transformer/transformoperationexecutor.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/class-transformer/transformoperationexecutor.d.ts": [
-        "../node_modules/class-transformer/classtransformoptions.d.ts",
-        "../node_modules/class-transformer/metadata/typemetadata.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/class-transformer/classtransformer.d.ts": [
-        "../node_modules/class-transformer/classtransformoptions.d.ts",
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/class-transformer/metadata/exposeexcludeoptions.d.ts": [
-        "../node_modules/@types/node/fs.d.ts",
-        "../node_modules/@types/node/ts3.2/fs.d.ts",
-        "../node_modules/@types/node/util.d.ts",
-        "../node_modules/@types/node/ts3.2/util.d.ts"
-      ],
-      "../node_modules/class-transformer/metadata/typemetadata.d.ts": [
-        "../node_modules/class-transformer/metadata/exposeexcludeoptions.d.ts",
+      "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts": [
+        "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
         "../node_modules/@types/node/fs.d.ts",
         "../node_modules/@types/node/ts3.2/fs.d.ts",
         "../node_modules/@types/node/util.d.ts",
@@ -10775,7 +10939,46 @@
       "../node_modules/class-validator/metadata/constraintmetadata.d.ts",
       "../node_modules/class-validator/metadata/metadatastorage.d.ts",
       "../node_modules/class-validator/index.d.ts",
+      "../node_modules/@nestjs/swagger/dist/decorators/api-operation.decorator.d.ts",
+      "../node_modules/@nestjs/swagger/dist/decorators/api-response.decorator.d.ts",
+      "../node_modules/@nestjs/swagger/dist/decorators/api-produces.decorator.d.ts",
+      "../node_modules/@nestjs/swagger/dist/decorators/api-consumes.decorator.d.ts",
+      "../node_modules/@nestjs/swagger/dist/decorators/api-bearer.decorator.d.ts",
+      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-body.decorator.d.ts",
+      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-header.decorator.d.ts",
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-enum.interface.d.ts",
+      "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts",
+      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-param.decorator.d.ts",
+      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-query.decorator.d.ts",
+      "../node_modules/@nestjs/swagger/dist/decorators/api-model-property.decorator.d.ts",
+      "../node_modules/@nestjs/swagger/dist/decorators/api-use-tags.decorator.d.ts",
+      "../node_modules/@nestjs/swagger/dist/decorators/api-oauth2.decorator.d.ts",
+      "../node_modules/@nestjs/swagger/dist/decorators/api-exclude-endpoint.decorator.d.ts",
+      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-file.decorator.d.ts",
+      "../node_modules/@nestjs/swagger/dist/decorators/index.d.ts",
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-base-config.interface.d.ts",
+      "../node_modules/@nestjs/swagger/dist/document-builder.d.ts",
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-custom-options.interface.d.ts",
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document-options.interface.d.ts",
+      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document.interface.d.ts",
+      "../node_modules/@nestjs/swagger/dist/interfaces/index.d.ts",
+      "../node_modules/@nestjs/swagger/dist/swagger-module.d.ts",
+      "../node_modules/@nestjs/swagger/dist/index.d.ts",
+      "../node_modules/@nestjs/swagger/index.d.ts",
+      "../src/crud/dto/create-shop.dto.ts",
+      "../node_modules/class-transformer/classtransformoptions.d.ts",
+      "../node_modules/class-transformer/classtransformer.d.ts",
+      "../node_modules/class-transformer/metadata/exposeexcludeoptions.d.ts",
+      "../node_modules/class-transformer/metadata/typemetadata.d.ts",
+      "../node_modules/class-transformer/transformoperationexecutor.d.ts",
+      "../node_modules/class-transformer/decorators.d.ts",
+      "../node_modules/class-transformer/index.d.ts",
+      "../src/crud/entities/shop.entity.ts",
+      "../src/crud/entities/beer.entity.ts",
+      "../src/crud/crud-beer.service.ts",
       "../src/crud/validators/handler-params.ts",
+      "../src/crud/crud-beer.controller.ts",
+      "../src/crud/crud-beer.module.ts",
       "../node_modules/@nestjs/core/adapters/http-adapter.d.ts",
       "../node_modules/@nestjs/core/adapters/index.d.ts",
       "../node_modules/@nestjs/core/constants.d.ts",
@@ -10810,6 +11013,8 @@
       "../node_modules/@nestjs/platform-fastify/interfaces/nest-fastify-application.interface.d.ts",
       "../node_modules/@nestjs/platform-fastify/interfaces/index.d.ts",
       "../node_modules/@nestjs/platform-fastify/index.d.ts",
+      "../src/interfaces/swagger-config.interface.ts",
+      "../src/interfaces/app-config.interface.ts",
       "../node_modules/@types/anymatch/index.d.ts",
       "../node_modules/@babel/types/lib/index.d.ts",
       "../node_modules/@types/babel__generator/index.d.ts",
@@ -10847,49 +11052,17 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../node_modules/@nestjs/swagger/dist/decorators/api-operation.decorator.d.ts",
-      "../node_modules/@nestjs/swagger/dist/decorators/api-response.decorator.d.ts",
-      "../node_modules/@nestjs/swagger/dist/decorators/api-produces.decorator.d.ts",
-      "../node_modules/@nestjs/swagger/dist/decorators/api-consumes.decorator.d.ts",
-      "../node_modules/@nestjs/swagger/dist/decorators/api-bearer.decorator.d.ts",
-      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-body.decorator.d.ts",
-      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-header.decorator.d.ts",
-      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-enum.interface.d.ts",
-      "../node_modules/@nestjs/swagger/dist/types/swagger-enum.type.d.ts",
-      "../node_modules/@nestjs/swagger/dist/decorators/api-model-property.decorator.d.ts",
-      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-query.decorator.d.ts",
-      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-param.decorator.d.ts",
-      "../node_modules/@nestjs/swagger/dist/decorators/api-use-tags.decorator.d.ts",
-      "../node_modules/@nestjs/swagger/dist/decorators/api-oauth2.decorator.d.ts",
-      "../node_modules/@nestjs/swagger/dist/decorators/api-exclude-endpoint.decorator.d.ts",
-      "../node_modules/@nestjs/swagger/dist/decorators/api-implicit-file.decorator.d.ts",
-      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-base-config.interface.d.ts",
-      "../node_modules/@nestjs/swagger/dist/interfaces/index.d.ts",
-      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document.interface.d.ts",
-      "../node_modules/@nestjs/swagger/dist/document-builder.d.ts",
-      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-custom-options.interface.d.ts",
-      "../node_modules/@nestjs/swagger/dist/interfaces/swagger-document-options.interface.d.ts",
-      "../node_modules/class-transformer/classtransformoptions.d.ts",
-      "../node_modules/class-transformer/classtransformer.d.ts",
-      "../node_modules/class-transformer/metadata/exposeexcludeoptions.d.ts",
-      "../node_modules/class-transformer/metadata/typemetadata.d.ts",
-      "../src/interfaces/swagger-config.interface.ts",
-      "../src/interfaces/app-config.interface.ts",
-      "../node_modules/@nestjs/swagger/dist/decorators/index.d.ts",
-      "../node_modules/@nestjs/swagger/dist/swagger-module.d.ts",
-      "../node_modules/@nestjs/swagger/dist/index.d.ts",
-      "../node_modules/@nestjs/swagger/index.d.ts",
-      "../src/crud/dto/create-shop.dto.ts",
       "../src/crud/dto/create-beer.dto.ts",
       "../src/crud/dto/update-beer.dto.ts",
-      "../node_modules/class-transformer/transformoperationexecutor.d.ts",
-      "../node_modules/class-transformer/decorators.d.ts",
-      "../node_modules/class-transformer/index.d.ts",
-      "../src/crud/entities/shop.entity.ts",
-      "../src/crud/entities/beer.entity.ts",
-      "../src/crud/crud-beer.service.ts",
-      "../src/crud/crud-beer.controller.ts",
-      "../src/crud/crud-beer.module.ts",
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.decorators.d.ts",
+      "../node_modules/@nestjs/mongoose/dist/common/index.d.ts",
+      "../node_modules/@nestjs/mongoose/dist/common/mongoose.utils.d.ts",
+      "../node_modules/@nestjs/mongoose/dist/interfaces/mongoose-options.interface.d.ts",
+      "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts",
+      "../node_modules/@nestjs/mongoose/dist/interfaces/index.d.ts",
+      "../src/crud/schema/crud-beer.schema.ts",
+      "../node_modules/@nestjs/mongoose/dist/index.d.ts",
+      "../node_modules/@nestjs/mongoose/index.d.ts",
       "../src/app.module.ts",
       "../src/main.ts"
     ]

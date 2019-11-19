@@ -1,9 +1,9 @@
 import { CreateShopDto } from './create-shop.dto';
-import {IsNotEmpty, IsOptional, IsString} from 'class-validator';
+import {IsMongoId, IsNotEmpty, IsOptional, IsString} from 'class-validator';
 import {ApiModelProperty} from '@nestjs/swagger';
 
 export class CreateBeerDto {
-    @IsString()
+    @IsMongoId()
     @IsNotEmpty()
     id: string;
 
