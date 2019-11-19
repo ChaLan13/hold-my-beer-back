@@ -1726,11 +1726,11 @@
         "signature": "bd254d1215ddc41aef86c8af0b3502fa99b07230273328bd235325da36caf8fa"
       },
       "../src/crud/dto/create-beer.dto.ts": {
-        "version": "de5e90e3ae8efc4453ce6f784a52d684f9fa5156b25113a86c5a261e40b07b69",
+        "version": "b74f5f10021ea75cef8dcf59625e3b37b166f6749a6ec3a3ee3e8a0c8aac16fe",
         "signature": "fdbf4b0e1db8db8605b955f1bad621da0af8b7dd4841e71450e487ddafd70bef"
       },
       "../src/crud/dto/update-beer.dto.ts": {
-        "version": "a18202752dd331fd4323c6b199c2335b3b4f10201d4d801cba8e14c7b2e0b2da",
+        "version": "a9cd210721af4b5910ddba4cd1b533f066821624b5b990c797695a0f44ebf40a",
         "signature": "694f5a55d7c6e54ff9be665daae36113094c5cd9788e5d6b3e1382d280a4fbd8"
       },
       "../node_modules/class-transformer/classtransformoptions.d.ts": {
@@ -10994,7 +10994,6 @@
       "../node_modules/@nestjs/swagger/index.d.ts",
       "../src/crud/dto/create-shop.dto.ts",
       "../src/crud/dto/create-beer.dto.ts",
-      "../src/crud/dto/update-beer.dto.ts",
       "../node_modules/class-transformer/classtransformoptions.d.ts",
       "../node_modules/class-transformer/classtransformer.d.ts",
       "../node_modules/class-transformer/metadata/exposeexcludeoptions.d.ts",
@@ -11012,6 +11011,7 @@
       "../node_modules/@nestjs/mongoose/dist/mongoose.module.d.ts",
       "../node_modules/@nestjs/mongoose/dist/index.d.ts",
       "../node_modules/@nestjs/mongoose/index.d.ts",
+      "../src/crud/dao/beer.dao.ts",
       "../src/crud/crud-beer.service.ts",
       "../src/crud/validators/handler-params.ts",
       "../src/crud/crud-beer.controller.ts",
@@ -11092,7 +11092,7 @@
       "../node_modules/@types/webpack/index.d.ts",
       "../node_modules/@types/yargs-parser/index.d.ts",
       "../node_modules/@types/yargs/index.d.ts",
-      "../src/crud/dao/beer.dao.ts"
+      "../src/crud/dto/update-beer.dto.ts"
     ]
   },
   "version": "3.7.2"

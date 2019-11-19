@@ -26,6 +26,7 @@
     "@nestjs/platform-express": "^6.7.2",
     "@nestjs/platform-fastify": "latest",
     "@nestjs/swagger": "latest",
+    "fastify-cors": "^2.2.0",
     "class-transformer": "^0.2.3",
     "class-validator": "^0.11.0",
     "config": "latest",
