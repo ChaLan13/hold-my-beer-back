@@ -32,4 +32,28 @@ db.getCollection('beer').insertMany([
             "URL": "http://www.monsite.com"
         }
     },
+    {
+        "id": "6666cd4dba6362g6f92c954e",
+        "name": "Bière du Druide",
+        "country": "France",
+        "cereal": [ "hop", "barley", "corn" ],
+        "birthYear": "1900",
+        "shop": {
+            "priceALiter": NumberDecimal(4.50),
+            "URL": "http://www.monsite.com"
+        }
+    },
+
+    {
+        "id": "7777cd4dba6362g6f92c954e",
+        "name": "Road Crew (Motorhead)",
+        "country": "England",
+        "cereal": ["hop"],
+        "birthYear": "1990",
+        "shop": {
+            "priceALiter": NumberDecimal(4.50),
+            "URL": "http://www.monsite.com"
+        }
+    },
+
 ])
