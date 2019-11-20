@@ -1,6 +1,5 @@
 db.getCollection('beer').insertMany([
     {
-        "id": "5763cd4d9d2a4f259b53c901",
         "name": "Pilsner",
         "country": "Germany",
         "cereal": [ "oat", "hop" ],
@@ -11,7 +10,6 @@ db.getCollection('beer').insertMany([
         }
     },
     {
-        "id": "5763cd4d51fdb6588742f99e",
         "name": "Guinness Classic",
         "country": "Ireland",
         "cereal": [ "hop" ],
@@ -22,7 +20,6 @@ db.getCollection('beer').insertMany([
         }
     },
     {
-        "id": "5763cd4dba6362a3f92c954e",
         "name": "Delirium",
         "country": "Ireland",
         "cereal": [ "malt" ],
