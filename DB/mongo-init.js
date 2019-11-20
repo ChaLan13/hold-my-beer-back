@@ -30,7 +30,6 @@ db.getCollection('beer').insertMany([
         }
     },
     {
-        "id": "6666cd4dba6362g6f92c954e",
         "name": "Bière du Druide",
         "country": "France",
         "cereal": [ "hop", "barley", "corn" ],
@@ -42,7 +41,6 @@ db.getCollection('beer').insertMany([
     },
 
     {
-        "id": "7777cd4dba6362g6f92c954e",
         "name": "Road Crew (Motorhead)",
         "country": "England",
         "cereal": ["hop"],
